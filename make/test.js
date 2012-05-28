@@ -19,7 +19,7 @@ var website = {
     title: 'Test website',
     slug:  'test',
     template: {
-        slug: 'default_jqmobile'
+        slug: 'listing_pages_jqmobile'
     },
     pages: [
         { id: 0, type: 'basic-0', title: 'Page one' },
