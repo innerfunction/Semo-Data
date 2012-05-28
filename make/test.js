@@ -18,8 +18,11 @@ var log = mods.log.getLogger('SemoBuild-Test');
 var website = {
     title: 'Test website',
     slug:  'test',
+    account: {
+    	username: 'username',
+    },
     template: {
-        slug: 'listing_pages_jqmobile'
+        slug: 'main_select_menu_jqmobile'
     },
     pages: [
         { id: 0, type: 'basic-0', title: 'Page one' },
@@ -32,7 +35,7 @@ var devices = [ mods.devices.get('preview') ];
 var slug = {
     slug : 'slug',
     account : {
-        username : 'username',
+        username : 'test',
     }
 }
 
