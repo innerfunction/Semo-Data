@@ -1,0 +1,16 @@
+<!-- jQuery mobile includes -->
+<!-- Themes -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+<link rel="stylesheet" href="themes/jquery-mobile-custom-pack-1.min.css" />
+<link rel="stylesheet" href="themes/{{website.template.theme}}.min.css" />
+<link type="text/css" href="css/jquery.mobile/themes/{{website.template.theme.css}}.css"/>
+
+<!-- JS -->
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+<script src="js/jquery.mobile.js"></script>
+<script type="text/javascript">
+    $(document).bind("mobileinit", function(){
+    $.mobile.pageLoading(false)
+})
+</script>

@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{{name}}</title>
+        {{{_includes_}}}
+        <link type="text/css" href="css/style.css"/>
+    </head>
+    <body>
+
+        <div data-role="page" class="general-view" id="home" data-theme="d">
+
+            <div data-role="header" class="ui-header">
+                <h1>{{name}}</h1>
+            </div>
+
+            <div data-role="content" class="ui-content">
+                <ul data-role="listview">
+                {{#pages}}
+                    <li><a href="#{{id}}">{{title}}</a></li>
+                {{/pages}}
+                </ul>
+            </div>
+        </div>
+
+        {{#pages}}
+        <div data-role="page" id="{{id}}" data-theme="b">
+            <div data-role="header">
+                <h1>{{title}}</h1>
+                <a href="#home" data-direction="reverse" data-icon="arrow-l" class="ui-btn-bck" >Home</a>
+            </div> 
+            <div data-role="content" role="main" class="ui-content">
+                <h1>{{title}}</h1>
+                    {{{_content_}}}
+            </div>
+        </div>
+        {{/pages}}
+
+    </body>
+</html>

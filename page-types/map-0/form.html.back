@@ -1,0 +1,7 @@
+<label>Title</label><input name="title">
+<label>Address</label><input name="address">
+<label>Coordinates</label><input name="coordinates">
+<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+    src="https://maps.google.es/?ie=UTF8&amp;ll=40.396764,-3.713379&amp;spn=7.963519,14.150391&amp;t=m&amp;z=6&amp;output=embed">
+</iframe>
+
