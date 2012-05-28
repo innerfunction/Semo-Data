@@ -18,6 +18,9 @@ var log = mods.log.getLogger('SemoBuild-Test');
 var website = {
     title: 'Test website',
     slug:  'test',
+    account : {
+        username : 'username'
+    },
     template: {
         slug: 'listing_pages_jqmobile'
     },
