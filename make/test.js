@@ -18,17 +18,17 @@ var log = mods.log.getLogger('SemoBuild-Test');
 var website = {
     title: 'Test website',
     slug:  'test',
-    account: {
-    	username: 'username',
+    account : {
+        username : 'username'
     },
     template: {
-        slug: 'template-1'
+        slug: 'default_jqmobile'
     },
     pages: [
         { id: 0, type: 'basic-0', title: 'Page one' },
         { id: 1, type: 'contact-0', title: 'Contact' },
-        { id: 2, type: 'map-0', title: 'Map' }
-    ]
+        { id: 2, type: 'map-0', title: 'Map', tagline: 'this is my site'}
+    ] 
 };
 
 var devices = [ mods.devices.get('preview') ];
