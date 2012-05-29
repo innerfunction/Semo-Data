@@ -13,14 +13,15 @@ var mods = {
 var log = mods.log.getLogger('SemoBuild-Test');
 
 // This has to be setup
-var settings = {
+var settings11 = {
     framework : 'jquery-mobile',
     themes : '../themes',
 }
 
 // This is you website data, update as convenient
 var website = {
-    make : settings,
+    // This is not a real property of the website object but used in make script
+    settings : mods.settings,
 
     title: 'Test website',
     slug:  'test',
