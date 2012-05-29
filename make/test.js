@@ -22,20 +22,29 @@ var website = {
         username : 'username'
     },
     template: {
-        slug: 'listing_pages_jqmobile'
+        slug: 'main_select_menu_jqmobile'
     },
     pages: [
         { id: 0, type: 'basic-0', title: 'Page one' },
         { id: 1, type: 'contact-0', title: 'Contact' },
-        { id: 2, type: 'map-0', title: 'Map' }
-    ]
+        { id: 2, type: 'map-0', title: 'Map', tagline: 'this is my site'}
+    ],
+    theme : {
+        _id : 'theme-a',
+        name : 'Theme a',
+        slug : 'jquery-mobile-customer-pack-1.css'
+        base : 'a',
+        palette : [ '#fffff', '#00000'],
+        background-color : ['1231312']
+    },
+      
 };
 
 var devices = [ mods.devices.get('preview') ];
 var slug = {
     slug : 'slug',
     account : {
-        username : 'username',
+        username : 'test',
     }
 }
 
