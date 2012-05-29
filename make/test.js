@@ -1,7 +1,5 @@
 // Setup this property to point to your Semo-Server folder
 var semoPath = '../../Semo-Server/';
-
-
 var semoModules = semoPath + 'node_modules/';
 var semoBuild = semoPath + 'semo-build/';
 
@@ -14,8 +12,16 @@ var mods = {
 
 var log = mods.log.getLogger('SemoBuild-Test');
 
+// This has to be setup
+var settings = {
+    framework : 'jquery-mobile',
+    themes : '../themes',
+}
+
 // This is you website data, update as convenient
 var website = {
+    make : settings,
+
     title: 'Test website',
     slug:  'test',
     account : {
@@ -23,6 +29,11 @@ var website = {
     },
     template: {
         slug: 'default_jqmobile'
+    },
+    theme : {
+        id : 'id',
+        slug : 'theme-a',
+        base : 'b'
     },
     pages: [
         { id: 0, type: 'basic-0', title: 'Page one' },
@@ -49,4 +60,4 @@ mods.build.init( mods.settings, function() {
         //    log.info('*** preview complete ***');
         //});
     });
-});
+})
