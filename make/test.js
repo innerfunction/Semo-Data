@@ -9,14 +9,8 @@ var mods = {
     settings:   require('./sample-settings'),
     devices:    require(semoPath+'semo-devices')
 };
-
 var log = mods.log.getLogger('SemoBuild-Test');
 
-// This has to be setup
-var settings11 = {
-    framework : 'jquery-mobile',
-    themes : '../themes',
-}
 
 // This is you website data, update as convenient
 var website = {
