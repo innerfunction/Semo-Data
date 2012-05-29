@@ -3,11 +3,9 @@
 
 <!-- Themes -->
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
-<!--<link rel="stylesheet" href="themes/jquery-mobile-custom-pack-1.min.css" /> -->
-<!--<link rel="stylesheet" href="themes/{{website.template.theme}}.min.css" / >-->
-<!--<link rel="stylesheet" href="themes/{{website.theme.slug}}.min.css" / >
-<link rel="stylesheet" href="themes/{{website.template.theme}}.min.css" / >-->
+<link rel="stylesheet" href="themes/{{website.theme.slug}}/theme.css" / >
 
+<!--<link rel="stylesheet" href="themes/jquery-mobile-custom-pack-1.min.css" />--
 <!--link type="text/css" href="css/jquery.mobile/themes/{{website.template.theme.slug}}.css"/>-->
 
 <!-- JS -->
@@ -16,10 +14,7 @@
 <script src="js/jquery.mobile.js"></script>
 <script type="text/javascript">
     $(document).bind("mobileinit", function(){
-    $.mobile.pageLoading(false)
-    $('option a').click(function(){
-        $(this).click();    
+        $.mobile.pageLoading(false)
     })
-
-})
 </script>
+<script src="js/main.js"></script>

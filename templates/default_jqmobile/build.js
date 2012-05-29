@@ -6,7 +6,7 @@ exports.targetForDevice = function( device ) {
 };
 
 exports.setup = function( target, device, indir, outdir, callback ) {
-    indir.cp('images css', outdir, callback );
+    indir.cp('images css themes js', outdir, callback );
 };
 
 exports.build = function( target, device, data, indir, outdir, page, callback ) {
