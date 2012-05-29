@@ -22,7 +22,7 @@ var website = {
     	username: 'username',
     },
     template: {
-        slug: 'main_select_menu_jqmobile'
+        slug: 'template-1'
     },
     pages: [
         { id: 0, type: 'basic-0', title: 'Page one' },
