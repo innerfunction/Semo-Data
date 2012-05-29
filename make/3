@@ -1,6 +1,7 @@
 // Set baseUrl to your Semo-Data path
-var baseUrl = '/Library/WebServer/Documents/github/Semo-Data';
+var baseUrl = '/Users/javierloriente/workspace/git/innerfunction/Semo-Data';
 exports.defaultFramework = 'jquery-mobile';
+
 
 
 exports.dirs = {
@@ -11,7 +12,7 @@ exports.dirs = {
     public:     baseUrl+'/public'
 };
 exports.baseurl = {
-    pageTypes:  baseUrl+'/page-types',
+    pageTypes:  '/rsc/page-types',
     public:     '/'
 };
 exports.build = {
