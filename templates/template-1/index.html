@@ -1,0 +1,50 @@
+<!--
+	@author: Natalia 
+	@name: Button-navbar
+	@description: Theme for jQuery Mobile
+-->
+
+<html>
+	<head>
+	    <meta charset="UTF-8" />
+	    <title>{{name}}</title>
+		{{{_includes_}}}
+		<link type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		
+		<div data-role="page" class="general-view" id="home" data-theme="{{#theme}}{{base}}{{/theme}}">
+		
+			<div data-role="header" class="ui-header" data-theme="{{#theme}}{{base}}{{/theme}}">
+				<h1>{{name}}</h1>
+			</div>
+			
+			<div data-role="content" class="ui-content">
+				<div class="ui-grid-b">
+					{{#pages}}
+					<div class="ui-block-a button-menu"><a href="#page-{{id}}">{{title}}</a></div>
+					<div class="ui-block-b button-menu"><a href="#page-{{id}}">{{title}}</a></div>
+					<div class="ui-block-c button-menu"><a href="#page-{{id}}">{{title}}</a></div>	
+					{{/pages}}
+				</div>
+			</div>
+			
+			<div data-role="footer" class="ui-footer" data-theme="{{#theme}}{{base}}{{/theme}}">
+				<h1>&copy; {{name}}</h1>
+			</div>
+		</div>
+			
+		{{#pages}}
+			<div data-role="page" id="page-{{id}}" data-theme="{{#theme}}{{base}}{{/theme}}">
+				<div data-role="header">
+					<h1>{{title}}</h1>
+					<a href="#home" data-direction="reverse" data-icon="arrow-l" class="ui-btn-bck" >Home</a>
+				</div> 
+				<div data-role="content" role="main" class="ui-content">
+					{{{_content_}}}
+				</div>
+			</div>
+		{{/pages}}
+		
+	</body>
+</html>

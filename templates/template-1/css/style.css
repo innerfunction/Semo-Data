@@ -1,0 +1,11 @@
+/* Test template CSS stylesheet */
+
+.button-menu {
+	height: 120px;
+	padding: 0.3em 10px;
+	text-decoration: none;
+	
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
