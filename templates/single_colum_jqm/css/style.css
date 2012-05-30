@@ -1,1 +1,7 @@
 /* Test template CSS stylesheet */
+.bottom-pages {
+	border-bottom: 1px solid #f4f4f4;
+	-webkit-box-shadow: 0 1px 0 #FFF;
+	   -moz-box-shadow: 0 1px 0 #FFF;
+	        box-shadow: 0 1px 0 #FFF;
+}
