@@ -1,0 +1,55 @@
+<!--
+	@author: Natalia 
+	@name: Button-navbar
+	@description: Theme for jQuery Mobile
+-->
+
+<html>
+	<head>
+	    <meta charset="UTF-8" />
+	    <title>{{name}}</title>
+		{{{_includes_}}}
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		
+		<div data-role="page" class="general-view" id="home" data-theme="{{#theme}}{{base}}{{/theme}}">
+		
+			<div data-role="header" class="ui-header" data-theme="{{#theme}}{{base}}{{/theme}}">
+				<h1>{{name}}</h1>
+			</div>
+			
+			<div class="logo">
+				<img src="http://misteridea.com/wp-content/uploads/misteridea1.png" />
+			</div>
+		
+			
+			<div data-role="footer" data-theme="{{#theme}}{{base}}{{/theme}}" data-position="fixed">		
+				<div data-role="navbar" data-theme="{{#theme}}{{base}}{{/theme}}">
+					<ul data-theme="{{#theme}}{{base}}{{/theme}}">
+						{{#pages}}
+						<li class="button-menu"><a href="#page-{{id}}" data-theme="{{#theme}}{{base}}{{/theme}}">{{title}}</a></li>
+						{{/pages}}
+					</ul>
+					
+				</div>
+				<h1>&copy; {{name}}</h1>
+			</div>
+			
+					
+		</div>
+			
+		{{#pages}}
+			<div data-role="page" id="page-{{id}}" data-theme="{{#theme}}{{base}}{{/theme}}">
+				<div data-role="header" data-theme="{{#theme}}{{base}}{{/theme}}">
+					<h1>{{title}}</h1>
+					<a href="#home" data-direction="reverse" data-icon="arrow-l" class="ui-btn-bck" >Home</a>
+				</div> 
+				<div data-role="content" role="main" class="ui-content" data-theme="{{#theme}}{{base}}{{/theme}}">
+					{{{_content_}}}
+				</div>
+			</div>
+		{{/pages}}
+		
+	</body>
+</html>

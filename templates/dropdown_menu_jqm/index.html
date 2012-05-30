@@ -11,20 +11,22 @@
 	<body>
 		
 		<div data-role="page" class="general-view" id="home" data-theme="{{#theme}}{{base}}{{/theme}}">
-			<div class="ui-header" data-role="header" data-position="fixed" data-theme="{{#theme}}{{base}}{{/theme}}">
-				<a href="#" class="">Logo</a>
+			<div data-role="header" class="ui-header" data-theme="{{#theme}}{{base}}{{/theme}}">
+			    <h1>{{name}}</h1>
 			</div>
-			<div class="ui-content" data-role="content">
-				<div class="ui-select">
+								
+			<div class="ui-content ui-grid-a" data-role="content">
+				<div class="ui-block-a">
+					<img src="" />
+				</div>
+				<div class="ui-select" class="ui-block-b">
 					<select> 
 						{{#pages}}
 							<option value="page-{{id}}">{{title}}</option>
 						{{/pages}}
 					</select>
 				</div>
-				<div>
-					<img src="" width="240px" height="240px" />
-				</div>
+				
 			</div>
 			
 		</div>
@@ -35,11 +37,11 @@
 		        <h1>{{title}}</h1>
 		        <a href="#home" data-direction="reverse" data-icon="arrow-l" class="ui-btn-bck" >Home</a>
 		    </div> 
-		    <div data-role="content" role="main" class="ui-content">
+		    <div data-role="content" role="main" class="ui-content" data-theme="{{#theme}}{{base}}{{/theme}}">
 		        <h1>{{title}}</h1>
 		            {{{_content_}}}
 		    </div>
-		    <div class="ui-footer" data-role="footer">
+		    <div class="ui-footer" data-role="footer" data-theme="{{#theme}}{{base}}{{/theme}}">
 		    	<p>Footer text</p>
 		    </div>
 		</div>

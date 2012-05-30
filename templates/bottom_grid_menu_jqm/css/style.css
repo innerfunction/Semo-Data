@@ -1,0 +1,64 @@
+/* Test template CSS stylesheet */
+.button-menu {
+	
+}
+
+.button-menu a {
+	text-decoration: none;
+	height: 80px;
+	
+	/* Crop the text */
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	text-align: left;
+}
+
+
+.tagline {
+	font-size: 18px;
+	line-height: 1.3em;
+	padding: 15px;
+	max-height: none;
+	margin: 0 0 5px;
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	text-shadow: 0 1px 1px black;
+}
+
+.home-image {
+	height: 100%;
+	margin: 20px;
+	text-align: center;
+}
+.home-image img {
+	max-width: 400px;
+	height: auto;
+	margin: 20px;
+	
+}
+
+.logo {
+  display: block;
+  padding: 4px;
+  line-height: 1;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  
+  max-width: 320px;
+  margin: 10px auto;
+}
+
+.logo > img {
+  display: block;
+  max-width: 320px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+}
