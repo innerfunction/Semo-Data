@@ -1,0 +1,42 @@
+<html>
+	<head>
+	    <meta charset="UTF-8" />
+	    <title>{{name}}</title>
+		{{{_includes_}}}
+		<link type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		
+		<div data-role="page" class="general-view" id="home" data-theme="{{#theme}}{{base}}{{/theme}}">
+			<div class="ui-header" data-role="header" data-position="fixed" data-theme="{{#theme}}{{base}}{{/theme}}">
+				<a href="#" class="ui-btnleft">Logo</a>
+				<a href="index.html" data-icon="gear" class="ui-btn-right">Menu</a>						
+			</div>
+			<div class="ui-content" data-role="content">
+				{{#pages}}
+					<a href="#page-{{id}}"><h3>{{title}}</h3></a>
+					<p>{{{_content_}}}</p>
+				{{/pages}}
+			</div>
+			<div class="ui-footer" data-role="footer">
+                <p>{{slug}}</p>
+			</div>
+		</div>
+		
+		{{#pages}}
+		<div data-role="page" id="page-{{id}}" data-theme="{{#theme}}{{base}}{{/theme}}">
+		    <div data-role="header">
+		        <h1>{{title}}</h1>
+		        <a href="#home" data-direction="reverse" data-icon="arrow-l" class="ui-btn-bck" >Home</a>
+		    </div> 
+		    <div data-role="content" role="main" class="ui-content">
+		        <h1>{{title}}</h1>
+		            {{{_content_}}}
+		    </div>
+		    <div class="ui-footer" data-role="footer">
+		    	<p>Footer text</p>
+		    </div>
+		</div>
+		{{/pages}}
+	</body>
+</html>
