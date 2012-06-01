@@ -23,17 +23,19 @@ var website = {
         username : 'username'
     },
     template: {
-        slug: 'default_jqmobile'
+        slug: 'single_colum_jqm'
     },
     theme : {
         id : 'id',
-        slug : 'theme-a',
-        base : 'b'
+        slug : 'winter',
+        base : 'c'
     },
     pages: [
-        { id: 0, type: 'basic-0', title: 'Page one' },
+        { id: 0, type: 'basic-0', title: 'Page zero', body: 'Soy el cuerpo', topImage: 'http://misteridea.com/wp-content/uploads/misteridea1.png' },
         { id: 1, type: 'contact-0', title: 'Contact' },
-        { id: 2, type: 'map-0', title: 'Map', tagline: 'this is my site'}
+        { id: 2, type: 'map-0', title: 'Map', tagline: 'this is my site'},
+        { id: 3, type: 'contact-0', title: 'Contact' },
+        { id: 4, type: 'social-media-0', twitter: 'http://twitter.com/natcrea', facebook: 'http://twitter.com/natcrea' }
     ] 
 };
 
