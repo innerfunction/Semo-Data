@@ -1,0 +1,48 @@
+<html>
+	<head>
+	    <meta charset="UTF-8" />
+	    <title>{{name}}</title>
+		{{{_includes_}}}
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		
+		<div data-role="page" class="general-view page" id="home" data-theme="{{#theme}}{{base}}{{/theme}}">
+		
+			<div data-role="header" class="ui-header header"data-position="fixed" data-theme="{{#theme}}{{base}}{{/theme}}">
+				<a href="#" class="ui-btnleft">Logo</a>
+				<h1>{{name}}</h1>
+				<!--<a href="" data-icon="gear" class="ui-btn-right">Menu</a>-->
+			</div>
+
+			
+			{{#pages}}
+				<div class="ui-content bottom-pages" data-role="content">
+					<div id="#page-{{id}}">
+						<div class="subpage-header">
+							<h2>{{title}}</h2>
+						</div>
+						<div class="section bottom-margin">
+							<p>{{{_content_}}}</p>
+						</div>
+					</div>
+				</div>
+			{{/pages}}
+			
+			
+			<div class="ui-footer" data-role="footer" data-theme="{{#theme}}{{base}}{{/theme}}">
+                <div class="section">
+                	<div class="center">
+                		<div class="share-subdiv share-badges">
+                			<a href="#share" class="facebook" data-transition="flip">Facebook</a>
+                			<a href="#share" class="twitter" data-transition="flip">Twitter</a>
+                			<a href="#share" class="mail" data-transition="flip">Newsletter</a>
+                		</div>
+                	</div>
+                </div>
+                
+			</div>
+		</div>
+		
+	</body>
+</html>
