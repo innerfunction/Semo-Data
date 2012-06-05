@@ -23,7 +23,7 @@ var website = {
         username : 'username'
     },
     template: {
-        slug: 'single_colum_jqm'
+        slug: 'bottom_grid_menu_jqm'
     },
     theme : {
         id : 'id',
