@@ -14,21 +14,18 @@
 			<div data-role="header" class="ui-header" data-theme="{{#theme}}{{base}}{{/theme}}">
 			    <h1>{{name}}</h1>
 			</div>
-								
-			<div class="ui-content ui-grid-a" data-role="content">
-				<div class="ui-block-a">
-					<img src="" />
-				</div>
-				<div class="ui-select" class="ui-block-b">
-					<select> 
-						{{#pages}}
-							<option value="page-{{id}}">{{title}}</option>
-						{{/pages}}
-					</select>
-				</div>
-				
+			<div data-role="content">
+				<img src="{{topImage}}" />
+				<p>{{body}}</p>
 			</div>
-			
+								
+			<div data-role="content">
+				<select data-native-menu="false"> 
+					{{#pages}}
+						<option value="page-{{id}}">{{title}}</option>
+					{{/pages}}
+				</select>
+			</div>
 		</div>
 		
 		{{#pages}}
