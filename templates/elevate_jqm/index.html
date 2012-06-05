@@ -1,0 +1,202 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<meta charset="UTF-8" />
+	<title>{{name}}</title>
+	{{{_includes_}}}
+	
+	<link rel="stylesheet" href="css/style.css" />
+	
+</head> 
+<body> 
+
+<div id="home" data-role="page" class="page general-view"  data-theme="{{#theme}}{{base}}{{/theme}}">
+	<!--HOME HEADER -->
+	<div data-role="header" data-position="inline" class="header" data-theme="{{#theme}}{{base}}{{/theme}}">
+		<h1><img src=""  /></h1>
+	</div>
+
+	<div data-role="content">	
+		<div class="section">
+			<img class="center" src=""/>
+		</div>
+		
+		<div class="section" >
+			<p class="tagline">Tagline: {{tagline}}</p>
+		</div>
+		
+		<div class="section botton-margin">
+			<select data-native-menu="false">
+				  {{#pages}}
+				  <option data-placeholder="true">{{title}}</option>
+				  {{/pages}}
+			</select>
+			<p></p>
+		</div>
+		<p></p>
+		<div class="section">
+			<div class="center">
+				<div class="share-subdiv share-badges">
+					<a href="#share" class="facebook" data-transition="flip">Facebook</a>
+					<a href="#share" class="twitter" data-transition="flip">Twitter</a>
+					<a href="#share" class="mail" data-transition="flip">Newsletter</a>
+				</div>
+			</div>
+		</div>
+		
+	</div><!-- /content -->
+	
+	<!-- page 2: BASIC PAGE --->
+	<div data-role="content">	
+		<div class=" subpage-header">
+			<h2>ABOUT US</h2>
+		</div>
+		
+		<div class="section" >
+			<p class="tagline">WE ARE A PROACTIVE AND ENERGETIC IRISH PR AGENCY THAT HELPS ORGANISATIONS, BRANDS AND OWNER ENTREPRENEURS TO CONNECT WITH THEIR TARGET CONSUMERS THROUGH THE MEDIA.</p>
+		</div>
+		
+		<div class="section">
+			<p>All campaigns aim to secure a strong return on investment for clients through print, broadcast, online and social media. Based in Dublin, Ireland, we produce successful PR corporate and consumer campaigns, both in traditional PR and online PR.</p>
+		</div>
+		
+		<p></p>
+				
+	</div><!-- /content -->
+	
+	<!-- page 3: THREE COLUM PAGE --->
+	<div data-role="content">	
+		<div class=" subpage-header">
+			<h2>What we do</h2>
+		</div>
+		
+		<div class="section" >
+			<p class="tagline">A COMPREHENSIVE PR SERVICE THAT SPANS THE MEDIA SPECTRUM IN IRELAND.</p>
+		</div>
+		
+		<div class="section">
+			<div class="ui-grid-b">
+				<div class="ui-block-a">
+					<h4> Traditional PR </h4>
+					<ul>
+						<li><p>Press office function</p></li>
+						<li><p>Crisis management</p></li>
+						<li><p>Competition placement</p></li>
+						<li><p>Media monitoring </p></li>
+					</ul>
+				</div>
+				<div class="ui-block-b">
+					<h4> ONLINE PR </h4>
+					<ul>
+						<li><p>Social Media</p></li>
+						<li><p>Blogger relations</p></li>
+						<li><p>Facebook and Twitter management</p></li>
+					</ul>
+				</div>
+				<div class="ui-block-c">
+					<h4> OTHER SERVICES</h4>
+					<ul>
+						<li><p>Photography</p></li>
+						<li><p>Sponsorship</p></li>
+						<li><p>Video production</p></li>
+					</ul>				
+				</div>
+			</div>
+
+		</div>
+		</div><!-- /content -->
+		
+		<!-- page 4: TWO COLUM PAGE --->
+			<div data-role="content">	
+				<div class=" subpage-header">
+					<h2>SERVICES</h2>
+				</div>
+				
+				<div class="section" >
+					<p class="tagline">A COMPREHENSIVE PR SERVICE THAT SPANS THE MEDIA SPECTRUM IN IRELAND.</p>
+				</div>
+				
+				<div class="section">
+					<div class="ui-grid-a">
+						<div class="ui-block-a">
+							<div data-role="content">
+							<h4> How very pinteresting! </h4>
+							<p>With 11.7million users and the capacity retain and engage users for the same amount of time as Facebook, Pinterest is the latest social media platform to consume us. But what’s the best way to use it when promoting a client? And is for big brands at all?</p>
+							</div>
+						</div>
+						<div class="ui-block-b">
+							<div data-role="content">
+							<h4> How very pinteresting! </h4>
+							<p>With 11.7million users and the capacity retain and engage users for the same amount of time as Facebook, Pinterest is the latest social media platform to consume us. But what’s the best way to use it when promoting a client?</p>	
+							</div>					
+						</div>
+					</div>
+		
+				</div>
+		
+		</div><!-- /content -->
+		
+		<!-- page 5: CONTACT FORM --->
+		<div data-role="content">	
+			<div class=" subpage-header">
+				<h2>CONTACT</h2>
+			</div>
+			
+			<div class="section" >
+		
+				<p class="tagline">KEEP IN TOUCH WITH US!</p>
+			</div>
+			
+			<div class="section">
+				
+				<form action="#" method="get">
+				
+							<h3>Contact form</h3>
+				
+							<p>If you want to visit us we are in Harcourt Street 20, Dublin 7. </p>
+							
+				
+							<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+					         <label for="name" class="ui-input-text">Name:</label>
+					         <input type="text" name="name" id="name" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
+							</div>
+				
+							<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+							<label for="textarea" class="ui-input-text">Message:</label>
+							<textarea cols="40" rows="8" name="textarea" id="textarea" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset"></textarea>
+							</div>
+				
+																						
+			
+						<div class="ui-body ui-body-b">
+						<fieldset class="ui-grid-a">
+								<div class="ui-block-a">
+									<button type="submit" data-theme="a" class="ui-btn-hidden" aria-disabled="false">Cancel</button>
+								</div>
+								<div class="ui-block-b">
+									<button type="submit" data-theme="a" class="ui-btn-hidden" aria-disabled="false">Send</button>
+								</div>
+					    </fieldset>
+						</div>
+					</form>
+			</div>
+		</div><!-- /content -->
+		<p></p>
+				
+		
+</div><!-- /page -->
+<div data-role="page" id="page-{{id}}" data-theme="{{#theme}}{{base}}{{/theme}}">
+    <div data-role="header" data-theme="{{#theme}}{{base}}{{/theme}}">
+        <h2>{{title}}</h2>
+        <a href="#home" data-direction="reverse" data-icon="arrow-l" class="ui-btn-bck" >Home</a>
+    </div> 
+    <div data-role="content" role="main" class="ui-content">
+        <h1>{{title}}</h1>
+            {{{_content_}}}
+    </div>
+</div>
+
+
+
+</body>
+</html>
