@@ -1,0 +1,30 @@
+<html>
+	<head>
+	    <meta charset="UTF-8" />
+	    <title>{{name}}</title>
+		{{{_includes_}}}
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		
+		<div data-role="page" class="general-view page" id="home" data-theme="{{#theme}}{{base}}{{/theme}}">
+		
+			<div data-role="header" class="ui-header header"data-position="fixed" data-theme="{{#theme}}{{base}}{{/theme}}">
+				<h1>{{name}}</h1>
+			</div>
+
+			<div class="ui-content" data-role="content">
+				{{#pages}}
+				<div id="#page-{{id}}">
+					<div data-role="collapsible">
+					   <h3>{{title}}</h3>
+					   <p>{{{_content_}}}</p>
+					</div>
+				</div>
+				{{/pages}}		
+			</div>
+			
+		</div>
+		
+	</body>
+</html>
