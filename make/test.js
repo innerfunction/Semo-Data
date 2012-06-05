@@ -27,8 +27,8 @@ var website = {
     },
     theme : {
         id : 'id',
-        slug : 'winter',
-        base : 'c'
+        slug : 'elevate',
+        base : 'a'
     },
     pages: [
         { id: 0, type: 'basic-0', title: 'Page zero', body: 'Soy el cuerpo', topImage: 'http://misteridea.com/wp-content/uploads/misteridea1.png' },
