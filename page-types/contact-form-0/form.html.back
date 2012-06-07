@@ -1,0 +1,5 @@
+<label>Title</label><input name="title">
+<label>Phone</label><input name="phone">
+<label>Email</label><input name="email">
+<label>Address</label><input name="address">
+<label>Twitter</label><input name="twitter">
