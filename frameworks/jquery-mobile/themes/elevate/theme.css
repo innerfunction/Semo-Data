@@ -69,6 +69,13 @@ ul   {
 }
 ul p { color: #272727; line-height:1}
 
+div > img {
+	text-align: center;
+}
+
+.center {
+	text-align: center;
+}
 
 
 /* A

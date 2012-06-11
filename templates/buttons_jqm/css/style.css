@@ -1,0 +1,5 @@
+/* Test template CSS stylesheet */
+
+div > img {
+	text-align: center;
+}
