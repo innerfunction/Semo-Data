@@ -1,1 +1,15 @@
 /* Test template CSS stylesheet */
+#contact li { padding-left: 38px; }
+
+#contact .address { background: url(./icon-address.png) no-repeat left; }
+  #contact .phone { background: url(./icon-phone.png) no-repeat left; }
+  #contact .email { background: url(./icon-email.png) no-repeat left; }
+    #contact .web { background: url(./icon-web.png) no-repeat left; }
+    
+
+#socialmedia li  { padding-left: 38px; }
+
+#socialmedia .facebook { background: url(./icon-facebook2.png) no-repeat left; }
+#socialmedia .twitter  { background: url(./icon-twitter2.png) no-repeat left; }
+#socialmedia .linkedin { background: url(./icon-linkedin2.png) no-repeat left; }
+
