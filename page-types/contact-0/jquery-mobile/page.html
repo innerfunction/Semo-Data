@@ -1,22 +1,20 @@
 <!-- Contact page type -->
 <p>
-    <span>Phone number:</span>{{_page_.phone}}
-</p>
-<p>
-    <span>Email:</span>{{_page_.email}}
-</p>
-<p>
-    <span>Address:</span>{{_page_.address}}
-</p>
-<p>
-    <span>Twitter:</span>{{_page_.twitter}}
-</p>
-<p>
-    <span>Facebook:</span>{{_page_.facebook}}
-</p>
-<p>
-    <span>LinkedIn:</span>{{_page_.linkedin}}
+	<ul data-role="listview" data-inset="true" id="contact">
+		<li data-role="list-divider" role="heading" class="ui-bar-a">Get in Touch</li>
+		<li class="address">{{_page_.address}}</li>
+		<li class="phone">{{_page_.phone}}</li>
+		<li class="email">{{_page_.email}}</li>
+		<li class="web">{{_page_.website}}</li>
+	</ul>
 </p>
 
-
+<p>
+	<ul data-role="listview" data-inset="true" id="socialmedia" data-theme="a">
+		<li data-role="list-divider" role="heading" class="ui-bar-a">Follow us</li>
+		<li class="facebook">{{_page_.facebook}}</li>
+		<li class="twitter">{{_page_.twitter}}</li>
+		<li class="linkedin">{{_page_.linkedin}}</li>
+	</ul>
+</p>
 
