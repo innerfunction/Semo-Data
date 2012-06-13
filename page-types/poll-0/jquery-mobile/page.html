@@ -1,11 +1,16 @@
 <!-- Basic page type -->
 <h6>{{_page_.polltitle}}</h6>
 <p>
-<form>
+<form action="form.php" method="post">
 	<fieldset>
 		<label>{{_page_.question}}</label>
-		<textarea type="text" id="answer" name="answer" required></textarea>
+		<p>
+			<textarea type="text" id="answer" name="answer" required></textarea>
+		</p>
+		<button type="submit" class="ui-btn-hidden" aria-disabled="false">Send</button>	
+		
 	</fieldset>
 </form>
+
 </p>
 
