@@ -5,12 +5,15 @@
 		{{{_includes_}}}
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	</head>
-	<body>
+	<body id="top">
 		
 		<div data-role="page" class="general-view page" id="home" data-theme="{{#theme}}{{base}}{{/theme}}">
 		
-			<div data-role="header" class="ui-header header"data-position="fixed" data-theme="{{#theme}}{{base}}{{/theme}}">
-				<a href="#" class="ui-btnleft">Logo</a>
+			<div data-role="header" class="ui-header header" data-theme="{{#theme}}{{base}}{{/theme}}" >
+				<div class="center">
+					<a href="#" class="center"><img src="{{topImage}}" />
+					</a>
+				</div>
 				<h1>{{name}}</h1>
 				<!--<a href="" data-icon="gear" class="ui-btn-right">Menu</a>-->
 			</div>
@@ -19,10 +22,11 @@
 			{{#pages}}
 				<div class="ui-content bottom-pages" data-role="content">
 					<div id="#page-{{id}}">
-						<div class="subpage-header">
+						<div data-role="header">
 							<h2>{{title}}</h2>
+							<a href="#top" data-role="button" data-icon="arrow-u" data-iconpos="notext" data-iconpos="right">Top</a>
 						</div>
-						<div class="section bottom-margin">
+						<div data-role="content">
 							<p>{{{_content_}}}</p>
 						</div>
 					</div>
