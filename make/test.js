@@ -35,7 +35,8 @@ var website = {
         { id: 1, type: 'contact-0', title: 'Contact' },
         { id: 2, type: 'map-0', title: 'Map', tagline: 'this is my site'},
         { id: 3, type: 'contact-0', title: 'Contact' },
-        { id: 4, type: 'social-media-0', twitter: 'http://twitter.com/natcrea', facebook: 'http://twitter.com/natcrea' }
+        { id: 4, type: 'social-media-0', twitter: 'http://twitter.com/natcrea', facebook: 'http://twitter.com/natcrea' },
+	{ id: 5, type: 'gallery-0'}
     ] 
 };
 
