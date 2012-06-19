@@ -1,0 +1,7 @@
+<div>
+    <label>Title</label><input name="title">
+</div>
+<div>
+    <label>Body</label><input name="body">
+<div>
+
