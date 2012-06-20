@@ -9,7 +9,7 @@
 		
 		<div data-role="page" class="general-view page" id="home" data-theme="{{#theme}}{{base}}{{/theme}}">
 		
-			<div data-role="header" class="ui-header header" data-theme="{{#theme}}{{base}}{{/theme}}" >
+			<div data-role="header" class="ui-header" data-theme="{{#theme}}{{base}}{{/theme}}" >
 				<div class="center">
 					<a href="#" class="center"><img src="{{topImage}}" />
 					</a>
@@ -25,7 +25,6 @@
 		    <p></p>
 				
 			<div class="ui-content bottom-pages" data-role="content">
-								
 				{{#pages}}
 				<div id="#page-{{id}}">
 					<div data-role="header">
@@ -39,9 +38,11 @@
 				{{/pages}}
 			</div>
 			
-			<div class="ui-footer" data-role="footer" data-theme="{{#theme}}{{base}}{{/theme}}">
-                <p class="center">footer {{footer}}</p>
-                <!--
+			<div data-role="footer" class="ui-footer ui-bar-a" role="contentinfo" data-theme="{{#theme}}{{base}}{{/theme}}">
+					<h4 class="ui-title" role="heading" aria-level="1">{{footer}}</h4>
+			</div>
+			
+			    <!-- SOCIAL MEDIA ICONS
                 <div class="section">
                 	<div class="center">
                 		<div class="share-subdiv share-badges">
@@ -52,7 +53,6 @@
                 	</div>
                 </div>
                 -->
-			</div>
 		</div>
 		
 	</body>
