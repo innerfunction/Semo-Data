@@ -12,6 +12,13 @@
 			<div data-role="header" class="ui-header header"data-position="fixed" data-theme="{{#theme}}{{base}}{{/theme}}">
 				<h1>{{name}}</h1>
 			</div>
+			
+			<p></p>
+			<p class="center"><img src="{{topImage}}" /></p>
+			<p></p>
+			<h4 class="center">" {{tagline}} "</h4>
+			<p></p>
+			
 
 			<div class="ui-content" data-role="content">
 				<p><img class="center" src="{{topImage}}" /></p>
@@ -26,10 +33,9 @@
 				{{/pages}}		
 			</div>
 			
-			<div data-role="footer">
-				<p>{{footer}}</p>
-			</div>
-			
+			<div data-role="footer" class="ui-footer ui-bar-a" role="contentinfo" data-theme="{{#theme}}{{base}}{{/theme}}" data-position="fixed">
+				<h4 class="ui-title" role="heading" aria-level="1">{{footer}}</h4>
+			</div>			
 		</div>
 		
 	</body>
