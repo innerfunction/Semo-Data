@@ -3,7 +3,7 @@
         <meta charset="UTF-8" />
         <title>{{name}}</title>
         {{{_includes_}}}
-        <link type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
     </head>
     <body>
 
@@ -12,29 +12,36 @@
             <div data-role="header" class="ui-header" data-theme="{{#theme}}{{base}}{{/theme}}">
                 <h1>{{name}}</h1>
             </div>
-
+            <!-- Logo -->
             <div class="center">
-                <p></p>
-                <img src="{{topImage}}" />
-                <p></p>
-                <p>{{tagline}}</p>
-                <p></p>
+            	<p></p>
+            	<img src="{{topImage}}"/>
+            	<p></p>
+            	<h3>{{tagline}}</h3>
+            	<p></p>
             </div>
             
+
             <div data-role="content" class="ui-content">
-            
-                <p>  
-                    <ul data-role="listview">
-                    {{#pages}}
-                    <li><a href="#page-{{id}}">{{title}}</a></li>
-                    {{/pages}}
-                    </ul>
-                </p>
-            </div>
-            
-            <div data-role="footer" class="ui-footer ui-bar-a" role="contentinfo" data-theme="{{#theme}}{{base}}{{/theme}}" data-position="fixed">
-            	<p class="ui-title" role="heading" aria-level="1">{{footer}}</p>
-            </div>
+                <!-- Menu -->
+                {{#pages}}
+                <div class="ui-grid-b">
+                	<div class="ui-block-a">
+                		<a href="#page-{{id}}" data-role="button">{{title}}</a>
+                	</div>
+                	<div class="ui-block-b">
+                		<a href="#page-{{id}}" data-role="button">{{title}}</a>
+                	</div>	 
+                	<div class="ui-block-c">
+                		<a href="#page-{{id}}" data-role="button">{{title}}</a>
+                	</div>  
+                </div>
+                {{/pages}}
+                
+              </div>    
+                   	<div data-role="footer" data-theme="{{#theme}}{{base}}{{/theme}}" data-position="fixed">		
+        		<h6>{{footer}}</h6>
+        	</div>        
         </div>
         
 

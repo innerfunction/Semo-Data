@@ -6,7 +6,7 @@
 	    <meta charset="UTF-8" />
 	    <title>{{name}}</title>
 		{{{_includes_}}}
-		<link type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	</head>
 	<body>
 		
@@ -14,9 +14,10 @@
 			<div data-role="header" class="ui-header" data-theme="{{#theme}}{{base}}{{/theme}}">
 			    <h1>{{name}}</h1>
 			</div>
-			<div data-role="content">
-				<img src="{{topImage}}" />
-				<p>{{body}}</p>
+			<div data-role="content" class="center">
+				<img class="center" src="{{topImage}}" /> 
+				<p></p>
+				<h4 class="center">{{tagline}}</h4>
 			</div>
 								
 			<div data-role="content">
@@ -26,6 +27,10 @@
 						<option value="page-{{id}}">{{title}}</option>
 					{{/pages}}
 				</select>
+			</div>
+			
+			<div data-role="footer" class="ui-footer ui-bar-a" role="contentinfo" data-theme="{{#theme}}{{base}}{{/theme}}" data-position="fixed">
+				<h6 class="ui-title" role="heading" aria-level="1">{{footer}}</h6>
 			</div>
 		</div>
 		

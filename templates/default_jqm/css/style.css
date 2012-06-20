@@ -1,5 +1,5 @@
 /* Test template CSS stylesheet */
 
-body {
-    background-color : {{background-color}}
+.center {
+	text-align: center;
 }

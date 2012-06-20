@@ -3,7 +3,7 @@
         <meta charset="UTF-8" />
         <title>{{name}}</title>
         {{{_includes_}}}
-        <link type="text/css" href="css/style.css"/>
+        <link  rel="stylesheet" type="text/css" href="css/style.css"/>
     </head>
     <body>
 
@@ -16,6 +16,8 @@
             <div data-role="content" class="ui-content">
                 <!--<p>{{description}}</p>-->
                 <div class="center">
+                	<h5>{{tagline}}</h5>
+                	<p></p>
                 	<img src="{{topImage}}" />
                 </div>
                 <p>  
@@ -24,10 +26,11 @@
                     {{/pages}}
                 </p>
             </div>
-            
-            <div data-role="footer">
-            	<h6>{{footer}}</h6>
+
+            <div data-role="footer" class="ui-footer ui-bar-a" role="contentinfo" data-theme="{{#theme}}{{base}}{{/theme}}" data-position="fixed">
+            	<h6 class="ui-title" role="heading" aria-level="1">{{footer}}</h6>
             </div>
+            			
         </div>
 
         {{#pages}}
@@ -41,6 +44,7 @@
             </div>
         </div>
         {{/pages}}
-
+        
+        
     </body>
 </html>

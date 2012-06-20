@@ -3,40 +3,9 @@
 <p>{{_page_.mapURI}}</p>
 <p>{{_page_.mapURI}}</p>
 <p><img scr="{{_page_.mapView}}"</p> -->
-<script type="text/javascript" src="includes/mobileLocation.js"></script>
-                <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
 
-                <script type="text/javascript">
-
-                        function initialize() {
-                                var infoWnd = new google.maps.InfoWindow();
-                                var coordinates = $('#map_canvas').attr('data-coordinates').split(',');
-                                var address = $('#map_canvas').attr('data-address');
-                                setupMap(coordinates[0],coordinates[1], 16, true);
-                                var quakeEventLatlng = new google.maps.LatLng(coordinates[0],coordinates[1]);
-                                var marker = createQuakeEventMarker(quakeEventLatlng)
-                                marker.setAnimation(google.maps.Animation.DROP)
-
-                                google.maps.event.addListener(marker, "click", function() {
-                                        infoWnd.setContent(address);
-                                        infoWnd.open(map, marker);
-                               });
-                        }
-
-                        // Initialize the map when the jQuery Mobile pageshow event is triggered
-                        $('#page-2').live("pagecreate", function() {
-                                if (map == null) {
-                                        initialize();
-                                }
-                        });
-                        $('.page_map').live("pagehide", function() {
-                                map = null;
-                        });
-                        
-                </script>
-<p>
-    <div data-role="content" id="map_content" style="width:100%; height:100%; padding:0;overflow: hidden; ">
-            <div id="map_canvas" data-coordinates="{{page_mapURI}}" style="width:100%; height:100%; padding:0;" data-address="<p style=&quot;color:black;&quot;>{{page_address}}</p>" ></div>
-
-    </div>
-</p>
+</script>
+<div data-role="content" > 
+        <div id="map_canvas" class="map_canvas" data-address="{{_page_.address}}" data-coordinates="{{_page_.mapURI}}"></div>
+</div>
