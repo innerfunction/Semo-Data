@@ -14,7 +14,11 @@
             </div>
 
             <div data-role="content" class="ui-content">
-                <!--<p>{{description}}</p>-->
+                <p></p>
+                <img src="{{topImage}}" />
+                <p></p>
+                <p>{{tagline}}</p>
+                <p></p>
                 <p>  
                     <ul data-role="listview">
                     {{#pages}}
@@ -23,7 +27,12 @@
                     </ul>
                 </p>
             </div>
+            
+            <div data-role="footer" class="ui-footer ui-bar-a" role="contentinfo" data-theme="{{#theme}}{{base}}{{/theme}}" data-position="fixed">
+            	<p class="ui-title" role="heading" aria-level="1">{{footer}}</p>
+            </div>
         </div>
+        
 
         {{#pages}}
         <div data-role="page" id="page-{{id}}" data-theme="{{#theme}}{{base}}{{/theme}}">
