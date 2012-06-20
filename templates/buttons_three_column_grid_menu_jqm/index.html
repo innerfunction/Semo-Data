@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{{name}}</title>
+        {{{_includes_}}}
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    </head>
+    <body>
+
+        <div data-role="page" class="general-view" id="home" data-theme="{{#theme}}{{base}}{{/theme}}">
+
+            <div data-role="header" class="ui-header" data-theme="{{#theme}}{{base}}{{/theme}}">
+                <h1>{{name}}</h1>
+            </div>
+            <!-- Logo -->
+            <div class="center">
+            	<p></p>
+            	<img src="{{topImage}}"/>
+            	<p></p>
+            	<h3>{{tagline}}</h3>
+            	<p></p>
+            </div>
+            
+
+            <div data-role="content" class="ui-content">
+                <!-- Menu -->
+                {{#pages}}
+                <div class="ui-grid-b">
+                	<div class="ui-block-a">
+                		<a href="#page-{{id}}" data-role="button">{{title}}</a>
+                	</div>
+                	<div class="ui-block-b">
+                		<a href="#page-{{id}}" data-role="button">{{title}}</a>
+                	</div>	 
+                	<div class="ui-block-c">
+                		<a href="#page-{{id}}" data-role="button">{{title}}</a>
+                	</div>  
+                </div>
+                {{/pages}}
+                
+              </div>    
+                   	<div data-role="footer" data-theme="{{#theme}}{{base}}{{/theme}}" data-position="fixed">		
+        		<h6>{{footer}}</h6>
+        	</div>        
+        </div>
+        
+
+        {{#pages}}
+        <div data-role="page" id="page-{{id}}" data-theme="{{#theme}}{{base}}{{/theme}}">
+            <div data-role="header" class="ui-header" data-theme="{{#theme}}{{base}}{{/theme}}">
+                <a href="#home" data-role="button" data-mini="true" data-inline="true" data-icon="home" >Home</a>
+                <h1>{{title}}</h1>
+            </div> 
+            
+            <div data-role="content" role="main" class="ui-content">
+                    {{{_content_}}}
+            </div>
+        </div>
+        {{/pages}}
+
+    </body>
+</html>
