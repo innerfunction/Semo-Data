@@ -23,11 +23,11 @@ var website = {
         username : 'username'
     },
     template: {
-        slug: 'single_column_jqm'
+        slug: 'default_jqm'
     },
     theme : {
         id : 'id',
-        slug : 'elevate',
+        slug : 'default',
         base : 'a'
     },
     pages: [
