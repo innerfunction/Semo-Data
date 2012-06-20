@@ -1,16 +1,16 @@
 <html>
-	<head>
-	    <meta charset="UTF-8" />
-	    <title></title>
-		<!-- SemoBuild includes -->
+    <head>
+        <meta charset="UTF-8" />
+        <title></title>
+        <!-- SemoBuild includes -->
         <!-- jQuery mobile includes -->
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <!-- Themes -->
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
 <!--<link rel="stylesheet" href="themes/.min.css" / >-->
-<!--<link rel="stylesheet" href="themes/elevate.min.css" / >
+<!--<link rel="stylesheet" href="themes/default.min.css" / >
 <link rel="stylesheet" href="themes/.min.css" / >-->
-<link rel="stylesheet" href="/Users/albertovelaz2002/Documents/go-movil/Webmob/Semo-Data/frameworks/jquery-mobile/themes/elevate/theme.css" / >
+<link rel="stylesheet" href="/Library/WebServer/Documents/github/Semo-Data/frameworks/jquery-mobile/themes/default/theme.css" / >
 <!--<link rel="stylesheet" href="themes/jquery-mobile-custom-pack-1.min.css" />--
 <!--link type="text/css" href="css/jquery.mobile/themes/.css"/>-->
 <!-- JS -->
@@ -27,57 +27,85 @@
     })
 </script>
 <script src="js/main.js"></script>
-        <script src="/Users/albertovelaz2002/Documents/go-movil/Webmob/Semo-Data/page-types/basic-0/jquery-mobile/page.js"></script>
-        <link rel="stylesheet" type="text/css" href="/Users/albertovelaz2002/Documents/go-movil/Webmob/Semo-Data/page-types/basic-0/jquery-mobile/page.css"/>
-        <script src="/Users/albertovelaz2002/Documents/go-movil/Webmob/Semo-Data/page-types/contact-0/jquery-mobile/page.js"></script>
-        <link rel="stylesheet" type="text/css" href="/Users/albertovelaz2002/Documents/go-movil/Webmob/Semo-Data/page-types/contact-0/jquery-mobile/page.css"/>
-        <script src="/Users/albertovelaz2002/Documents/go-movil/Webmob/Semo-Data/page-types/map-0/jquery-mobile/page.js"></script>
-        <link rel="stylesheet" type="text/css" href="/Users/albertovelaz2002/Documents/go-movil/Webmob/Semo-Data/page-types/map-0/jquery-mobile/page.css"/>
-        <script src="/Users/albertovelaz2002/Documents/go-movil/Webmob/Semo-Data/page-types/social-media-0/jquery-mobile/page.js"></script>
-        <link rel="stylesheet" type="text/css" href="/Users/albertovelaz2002/Documents/go-movil/Webmob/Semo-Data/page-types/social-media-0/jquery-mobile/page.css"/>
-        <script src="/Users/albertovelaz2002/Documents/go-movil/Webmob/Semo-Data/page-types/gallery-0/jquery-mobile/page.js"></script>
-        <link rel="stylesheet" type="text/css" href="/Users/albertovelaz2002/Documents/go-movil/Webmob/Semo-Data/page-types/gallery-0/jquery-mobile/page.css"/>
-		<link rel="stylesheet" type="text/css" href="css/style.css"/>
-	</head>
-	<body id="top">
-		
-		<div data-role="page" class="general-view page" id="home" data-theme="a">
-		
-			<div data-role="header" class="ui-header header" data-theme="a" >
-				<div class="center">
-					<a href="#" class="center"><img src="" />
-					</a>
-				</div>
-				<h1></h1>
-				<!--<a href="" data-icon="gear" class="ui-btn-right">Menu</a>-->
-			</div>
+        <script src="/Library/WebServer/Documents/github/Semo-Data/page-types/basic-0/jquery-mobile/page.js"></script>
+        <link rel="stylesheet" type="text/css" href="/Library/WebServer/Documents/github/Semo-Data/page-types/basic-0/jquery-mobile/page.css"/>
+        <script src="/Library/WebServer/Documents/github/Semo-Data/page-types/contact-0/jquery-mobile/page.js"></script>
+        <link rel="stylesheet" type="text/css" href="/Library/WebServer/Documents/github/Semo-Data/page-types/contact-0/jquery-mobile/page.css"/>
+        <script src="/Library/WebServer/Documents/github/Semo-Data/page-types/map-0/jquery-mobile/page.js"></script>
+        <link rel="stylesheet" type="text/css" href="/Library/WebServer/Documents/github/Semo-Data/page-types/map-0/jquery-mobile/page.css"/>
+        <script src="/Library/WebServer/Documents/github/Semo-Data/page-types/social-media-0/jquery-mobile/page.js"></script>
+        <link rel="stylesheet" type="text/css" href="/Library/WebServer/Documents/github/Semo-Data/page-types/social-media-0/jquery-mobile/page.css"/>
+        <script src="/Library/WebServer/Documents/github/Semo-Data/page-types/gallery-0/jquery-mobile/page.js"></script>
+        <link rel="stylesheet" type="text/css" href="/Library/WebServer/Documents/github/Semo-Data/page-types/gallery-0/jquery-mobile/page.css"/>
+        <link type="text/css" href="css/style.css"/>
+    </head>
+    <body>
 
-			
-			
-				<div class="ui-content bottom-pages" data-role="content">
-					<div id="#page-0">
-						<div data-role="header">
-							<h2>Page zero</h2>
-							<a href="#top" data-role="button" data-icon="arrow-u" data-iconpos="notext" data-iconpos="right">Top</a>
-						</div>
-						<div data-role="content">
-							<p><!-- Basic page type -->
+        <div data-role="page" class="general-view" id="home" data-theme="a">
+
+            <div data-role="header" class="ui-header" data-theme="a">
+                <h1></h1>
+            </div>
+
+            <div class="center">
+                <p></p>
+                <img src="" />
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+            
+            <div data-role="content" class="ui-content">
+            
+                <p>  
+                    <ul data-role="listview">
+                    
+                    <li><a href="#page-0">Page zero</a></li>
+                    
+                    <li><a href="#page-1">Contact</a></li>
+                    
+                    <li><a href="#page-2">Map</a></li>
+                    
+                    <li><a href="#page-3">Contact</a></li>
+                    
+                    <li><a href="#page-4">Test website</a></li>
+                    
+                    <li><a href="#page-5">Test website</a></li>
+                    
+                    </ul>
+                </p>
+            </div>
+            
+            <div data-role="footer" class="ui-footer ui-bar-a" role="contentinfo" data-theme="a" data-position="fixed">
+            	<p class="ui-title" role="heading" aria-level="1"></p>
+            </div>
+        </div>
+        
+
+        
+        <div data-role="page" id="page-0" data-theme="a">
+            <div data-role="header" class="ui-header" data-theme="a">
+                <a href="#home" data-role="button" data-mini="true" data-inline="true" data-icon="home" >Home</a>
+                <h1>Page zero</h1>
+            </div> 
+            
+            <div data-role="content" role="main" class="ui-content">
+                    <!-- Basic page type -->
 <p>Soy el cuerpo</p>
 <p>
 	<img src="http://misteridea.com/wp-content/uploads/misteridea1.png" />
-</p></p>
-						</div>
-					</div>
-				</div>
-			
-				<div class="ui-content bottom-pages" data-role="content">
-					<div id="#page-1">
-						<div data-role="header">
-							<h2>Contact</h2>
-							<a href="#top" data-role="button" data-icon="arrow-u" data-iconpos="notext" data-iconpos="right">Top</a>
-						</div>
-						<div data-role="content">
-							<p><!-- Contact page type -->
+</p>
+            </div>
+        </div>
+        
+        <div data-role="page" id="page-1" data-theme="a">
+            <div data-role="header" class="ui-header" data-theme="a">
+                <a href="#home" data-role="button" data-mini="true" data-inline="true" data-icon="home" >Home</a>
+                <h1>Contact</h1>
+            </div> 
+            
+            <div data-role="content" role="main" class="ui-content">
+                    <!-- Contact page type -->
 <p>
 	<ul data-role="listview" data-inset="true" id="contact">
 		<li data-role="list-divider" role="heading" class="ui-bar-a">Get in Touch</li>
@@ -94,19 +122,18 @@
 		<li class="twitter"></li>
 		<li class="linkedin"></li>
 	</ul>
-</p></p>
-						</div>
-					</div>
-				</div>
-			
-				<div class="ui-content bottom-pages" data-role="content">
-					<div id="#page-2">
-						<div data-role="header">
-							<h2>Map</h2>
-							<a href="#top" data-role="button" data-icon="arrow-u" data-iconpos="notext" data-iconpos="right">Top</a>
-						</div>
-						<div data-role="content">
-							<p><!-- Map page type -->
+</p>
+            </div>
+        </div>
+        
+        <div data-role="page" id="page-2" data-theme="a">
+            <div data-role="header" class="ui-header" data-theme="a">
+                <a href="#home" data-role="button" data-mini="true" data-inline="true" data-icon="home" >Home</a>
+                <h1>Map</h1>
+            </div> 
+            
+            <div data-role="content" role="main" class="ui-content">
+                    <!-- Map page type -->
 <!-- <p>Circus Street</p>
 <p>40.396764,-3.713379</p>
 <p>40.396764,-3.713379</p>
@@ -115,19 +142,18 @@
 </script>
 <div data-role="content" > 
         <div id="map_canvas" class="map_canvas" data-address="Circus Street" data-coordinates="40.396764,-3.713379"></div>
-</div></p>
-						</div>
-					</div>
-				</div>
-			
-				<div class="ui-content bottom-pages" data-role="content">
-					<div id="#page-3">
-						<div data-role="header">
-							<h2>Contact</h2>
-							<a href="#top" data-role="button" data-icon="arrow-u" data-iconpos="notext" data-iconpos="right">Top</a>
-						</div>
-						<div data-role="content">
-							<p><!-- Contact page type -->
+</div>
+            </div>
+        </div>
+        
+        <div data-role="page" id="page-3" data-theme="a">
+            <div data-role="header" class="ui-header" data-theme="a">
+                <a href="#home" data-role="button" data-mini="true" data-inline="true" data-icon="home" >Home</a>
+                <h1>Contact</h1>
+            </div> 
+            
+            <div data-role="content" role="main" class="ui-content">
+                    <!-- Contact page type -->
 <p>
 	<ul data-role="listview" data-inset="true" id="contact">
 		<li data-role="list-divider" role="heading" class="ui-bar-a">Get in Touch</li>
@@ -144,70 +170,68 @@
 		<li class="twitter"></li>
 		<li class="linkedin"></li>
 	</ul>
-</p></p>
-						</div>
-					</div>
-				</div>
-			
-				<div class="ui-content bottom-pages" data-role="content">
-					<div id="#page-4">
-						<div data-role="header">
-							<h2>Test website</h2>
-							<a href="#top" data-role="button" data-icon="arrow-u" data-iconpos="notext" data-iconpos="right">Top</a>
-						</div>
-						<div data-role="content">
-							<p><!-- Social Media page type -->
+</p>
+            </div>
+        </div>
+        
+        <div data-role="page" id="page-4" data-theme="a">
+            <div data-role="header" class="ui-header" data-theme="a">
+                <a href="#home" data-role="button" data-mini="true" data-inline="true" data-icon="home" >Home</a>
+                <h1>Contact</h1>
+            </div> 
+            
+            <div data-role="content" role="main" class="ui-content">
+                    <!-- Social Media page type -->
 <p>
 	<ul data-role="listview" class="ui-listview">
-		<li  data-icon="arrow-r" data-iconpos="right" 
-		  class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c">
-		  <div class="ui-btn-inner">
-			  <div class="ui-btn-text">
-			  	<a href="http://twitter.com/natcrea" class="ui-link-inherit">
-					<h3 class="ui-li-heading">Twitter</h3>				  
-					<p class="ui-li-desc">http://twitter.com/natcrea</p>
-			  	</a>
-			  </div>
-			  <span class="ui-icon ui-icon-arrow-r">&nbsp;</span>
-		  </div>
+		<li>
+		 	<a href="http://twitter.com/natcrea" class="ui-link-inherit">
+				<h3 class="ui-li-heading">Twitter</h3>				  
+				<p class="ui-li-desc">http://twitter.com/natcrea</p>
+			</a>
 		</li>
-		<li  data-icon="arrow-r" data-iconpos="right" 
-		  class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c">
+		<li><a href="http://twitter.com/natcrea" class="ui-link-inherit">
 				<h3 class="ui-li-heading">Facebook</h3>
 				<p class="ui-li-desc">http://twitter.com/natcrea</p>
+			</a>
 		</li>
-		<li  data-icon="arrow-r" data-iconpos="right" 
-		  class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c">
+		<li>
+			<a href="" class="ui-link-inherit">
 				<h3 class="ui-li-heading">LinkedIn</h3>
 				<p class="ui-li-desc"></p>
+			</a>
 		</li>
-		<li  data-icon="arrow-r" data-iconpos="right" 
-		  class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c">
+		<li>
+			<a href="" class="ui-link-inherit">
 				<h3 class="ui-li-heading">Pinterest</h3>
 				<p class="ui-li-desc"></p>
-		</li><li  data-icon="arrow-r" data-iconpos="right" 
-		  class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c">
+			</a>
+		</li>
+		<li>
+			<a href="" class="ui-link-inherit">
 				<h3 class="ui-li-heading">Wordpress</h3>
 				<p class="ui-li-desc"></p>
-		</li><li  data-icon="arrow-r" data-iconpos="right" 
-		  class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c">
+			</a>
+		</li>
+		<li>
+			<a href="" class="ui-link-inherit">
 				<h3 class="ui-li-heading">Blog</h3>
 				<p class="ui-li-desc"></p>
+			</a>
 		</li>
 	</ul>
-</p></p>
-						</div>
-					</div>
-				</div>
-			
-				<div class="ui-content bottom-pages" data-role="content">
-					<div id="#page-5">
-						<div data-role="header">
-							<h2>Test website</h2>
-							<a href="#top" data-role="button" data-icon="arrow-u" data-iconpos="notext" data-iconpos="right">Top</a>
-						</div>
-						<div data-role="content">
-							<p><div data-role="header">
+</p>
+            </div>
+        </div>
+        
+        <div data-role="page" id="page-5" data-theme="a">
+            <div data-role="header" class="ui-header" data-theme="a">
+                <a href="#home" data-role="button" data-mini="true" data-inline="true" data-icon="home" >Home</a>
+                <h1>Contact</h1>
+            </div> 
+            
+            <div data-role="content" role="main" class="ui-content">
+                    <div data-role="header">
 	<h1>First Gallery</h1>
 </div>
 
@@ -227,26 +251,10 @@
 		
 	</ul>
 	
-</div></p>
-						</div>
-					</div>
-				</div>
-			
-			
-			
-			<div class="ui-footer" data-role="footer" data-theme="a">
-                <div class="section">
-                	<div class="center">
-                		<div class="share-subdiv share-badges">
-                			<a href="#share" class="facebook" data-transition="flip">Facebook</a>
-                			<a href="#share" class="twitter" data-transition="flip">Twitter</a>
-                			<a href="#share" class="mail" data-transition="flip">Newsletter</a>
-                		</div>
-                	</div>
-                </div>
-                
-			</div>
-		</div>
-		
-	</body>
+</div>
+            </div>
+        </div>
+        
+
+    </body>
 </html>

@@ -1,32 +1,5 @@
 /* Test template CSS stylesheet */
 
-.center {
-	margin: 0 auto;
-	text-align: center;
+body {
+    background-color : {{background-color}}
 }
-.botton-margin {
-	margin-bottom: 10px;
-}
-
-/*Buttons Share Styles*/
-.share-subdiv {
-	height: 39px;
-	width: 120px;
-	margin: 0 auto;
-	border: 1px solid #ccc;
-	-moz-box-shadow: 0px 1px  4px  /*{global-box-shadow-size}*/  
-	rgba(0,0,0,.3)  /*{global-box-shadow-color}*/;
-	-webkit-box-shadow: 0px 1px  4px  /*{global-box-shadow-size}*/ 
-	rgba(0,0,0,.3)  /*{global-box-shadow-color}*/;
-	box-shadow: 0px 1px  4px  /*{global-box-shadow-size}*/  				
-	rgba(0,0,0,.3)  /*{global-box-shadow-color}*/;
-	
-}
-.share-badges a{display:block; height:40px; width:40px; background:#888 url(file:///Library/WebServer/Documents/elevate/images/share-social-media3.png) no-repeat 0 0; float:left; text-indent:-9999px; margin:0px 0px; }
-.share-badges a:hover{background-color:#eee}
-.share-badges a.facebook{background-position:-40px 0;background-color: #96a1b0;}
-.share-badges a.facebook:hover{background-color:#659df7}
-.share-badges a.twitter{background-position:-80px 0;background-color:#9aacad;}
-.share-badges a.twitter:hover{background-color:#40d6ff}
-.share-badges a.mail{background-position:-120px 0;background-color:#797867;}
-.share-badges a.mail:hover{background-color:#cad01d;}
