@@ -20,46 +20,29 @@
             	<h3>{{tagline}}</h3>
             	<p></p>
             </div>
-            
-
-            <div data-role="content" class="ui-content">
-                <!-- Menu -->
+            <p>  
                 {{#pages}}
-                <div class="ui-grid-b">
-                	<div class="ui-block-a">
-                		<a href="#page-{{id}}" data-role="button">{{title}}</a>
-                	</div>
-                	<div class="ui-block-b">
-                		<a href="#page-{{id}}" data-role="button">{{title}}</a>
-                	</div>	 
-                	<div class="ui-block-c">
-                		<a href="#page-{{id}}" data-role="button">{{title}}</a>
-                	</div>  
-                </div>
-                {{/pages}}
-                
-              </div>    
-            <!--<p>  
-            {{#pages}}
-               	<div class="ui-grid-b" data-theme="{{#theme}}{{base}}{{/theme}}">
+               	<div class="ui-grid-b">
                		<div class="ui-block-a">
-               			<a href="#page-{{id}}" class="ui-bar ui-bar-a menu">
-               				<h2>{{title}}</h2>
+               			<a href="#page-{{id}}" class="ui-bar ui-bar-a ui-link menu">
+               				<h2 class="ui-li-heading">{{title}}</h2>
                			</a>
                		</div>
                		<div class="ui-block-b">
-	               		<a href="#page-{{id}}" class="ui-bar ui-bar-a menu">
-	               			<h2>{{title}}</h2>
+	               		<a href="#page-{{id}}" class="ui-bar ui-bar-a ui-link menu">
+	               			<h2 class="ui-li-heading">{{title}}</h2>
 	               		</a>
                		</div>
                		<div class="ui-block-c">
-               			<a href="#page-{{id}}" class="ui-bar ui-bar-a menu">
-               				<h2>{{title}}</h2>
+               			<a href="#page-{{id}}" class="ui-bar ui-bar-a ui-link menu">
+               				<h2 class="ui-li-heading">{{title}}</h2>
                			</a>
                		</div>
-               	</div>
-             {{/pages}}
-             </p> -->
+               	</div><!-- /grid-b -->
+               	{{/pages}}
+            </p>
+
+            
         	<div data-role="footer" data-theme="{{#theme}}{{base}}{{/theme}}" data-position="fixed">		
         		<h6>{{footer}}</h6>
         	</div>        
