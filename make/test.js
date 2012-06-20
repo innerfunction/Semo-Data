@@ -43,12 +43,17 @@ var website = {
         { id: 4, type: 'two-columns-0', title: 'Two colums', tagLine: 'WE ARE A FRANK AND TENACIOUS PR AGENCY BASED IN DUBLIN, IRELAND THAT PLANS AND EXECUTES INNOVATIVE AND SAVVY CAMPAIGNS FOR A RANGE OF CONSUMER AND CORPORATE CLIENTS.', body:'With 11.7million users and the capacity retain and engage users for the same amount of time as Facebook, Pinterest is the latest social media platform to consume us. But whatâ€™s the best way to use it when promoting a client? And is for big brands at all?', columnOneTitle: 'I am 1', columnTwoTitle:'I am 2', columnOneBody: 'With 11.7million users and the capacity retain and engage users for the same amount of time as Facebook, Pinterest is the latest social media platform to consume us. But whatâ€™s the best way to use it when promoting a client? And is for big brands at all?', columnTwoBody: 'With 11.7million users and the capacity retain and engage users for the same amount of time as Facebook, Pinterest is the latest social media platform to consume us. But whatâ€™s the best way to use it when promoting a client? And is for big brands at all?'  }
 =======
         { id: 1, type: 'contact-0', title: 'Contact' },
-        { id: 2, type: 'map-0', title: 'Map', tagline: 'this is my site'},
+        { id: 2, type: 'map-0', title: 'Map', address: 'Circus Street',mapURI:'40.396764,-3.713379'},
         { id: 3, type: 'contact-0', title: 'Contact' },
         { id: 4, type: 'social-media-0', twitter: 'http://twitter.com/natcrea', facebook: 'http://twitter.com/natcrea' },
+<<<<<<< HEAD
 	{ id: 5, type: 'gallery-0'}
 >>>>>>> dc7fede56dd040db3459fe4a77feb6f93e9e599b
     ] 
+=======
+        { id: 5, type: 'gallery-0'}
+    ]
+>>>>>>> Google Map working
 };
 
 var devices = [ mods.devices.get('preview') ];

@@ -1,22 +1,42 @@
-var map;
+//////////////////////////////////////////////////////////////////////////////////////////
+////////////  Google Maps Script  ////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+        $(function(){
+                
+                var coordinates = $('#map_canvas').attr('data-coordinates').split(',');
+                initializeMap(coordinates[0],coordinates[1]);
+        });
 
-function createQuakeEventMarker(quakeEventLatlng) {
-    return new google.maps.Marker({position: quakeEventLatlng, map: map});
-}
+        function initializeMap(lat,lng) {
+                var latlng = new google.maps.LatLng(lat, lng);
+                var myOptions = {
+                        zoom: 8,
+                        center: latlng,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
 
-function setupMap(lat, lng, mapZoom, showOverviewControl) {
-    var mapLatlng = new google.maps.LatLng(lat, lng);
-    var myOptions = {
-        zoom: mapZoom,
-        center: mapLatlng,
-        overviewMapControl: showOverviewControl,
-        zoomControl: true,
-        zoomControlOptions: {
-            style: google.maps.ZoomControlStyle.SMALL,
-            position: google.maps.ControlPosition.LEFT_TOP
+                var infoWnd = new google.maps.InfoWindow();
+                var address = $('#map_canvas').attr('data-address');
 
-        },
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-    map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-}
+                var map = new google.maps.Map(document.getElementById("map_canvas"),myOptions);
+                //var crosshairLayer = new google.maps.KmlLayer('http://freezoo.alwaysdata.net/justcrosshair2.kml',
+                //{preserveViewport: true});
+
+                //crosshairLayer.setMap(map);
+
+                google.maps.event.trigger(map, 'resize');
+                map.setZoom( map.getZoom() );
+
+                var marker = new google.maps.Marker({'position': latlng});
+                marker.setMap(map);
+                marker.setAnimation(google.maps.Animation.DROP);
+
+                google.maps.event.addListener(marker, "click", function() {
+                        infoWnd.setContent(address);
+                        infoWnd.open(map, marker);
+                });
+        }
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////// End Google Maps /////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
