@@ -1,0 +1,10 @@
+/* Test template CSS stylesheet */
+
+.menu {
+	height: 120px;
+}
+
+.center {
+	text-align: center;
+	padding: 15px;
+}
