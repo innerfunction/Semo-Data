@@ -21,17 +21,14 @@
 			<p></p>
 			<p class="center"><img src="{{topImage}}" width="320px" height="auto"/></p>
 			<p></p>
-			<h4 class="center">" {{tagline}} "</h4>
+			<h4 class="center">{{tagline}}</h4>
 		    <p></p>
 				
 			<div class="ui-content bottom-pages" data-role="content">
 				{{#pages}}
 				<div id="#page-{{id}}">
-					<div data-role="header">
-						<h2>{{title}}</h2>
-						<a href="#top" data-role="button" data-icon="arrow-u" data-iconpos="notext" data-iconpos="right">Top</a>
-					</div>
 					<div data-role="content">
+						<h1>{{title}}</h1>
 						<p>{{{_content_}}}</p>
 					</div>
 				</div>
