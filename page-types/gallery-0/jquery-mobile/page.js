@@ -1,6 +1,6 @@
 (function(window, PhotoSwipe){
 		
-			document.addEventListener('DOMContentLoaded', function(){
+            document.addEventListener('DOMContentLoaded', function(){
 			
 				var
 					options = {},
