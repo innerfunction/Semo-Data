@@ -6,23 +6,19 @@
         <link type="text/css" href="css/style.css"/>
     </head>
     <body>
-
         <div data-role="page" class="general-view" id="home" data-theme="{{#theme}}{{base}}{{/theme}}">
 
-            <div data-role="header" class="ui-header" data-theme="{{#theme}}{{base}}{{/theme}}">
-                <h1>{{name}}</h1>
+            <div data-role="header" class="ui-header" >
+                <h1>{{header}}</h1>
             </div>
 
-            <div class="center">
-                <p></p>
+            <div class="center" style="text-align:center">
                 <img src="{{topImage}}" />
                 <p></p>
-                <p>{{tagline}}</p>
-                <p></p>
+                <h4>{{tagline}}</h4>
             </div>
             
-            <div data-role="content" class="ui-content">
-            
+            <div data-role="content" class="ui-content" style="text-align:center">
                 <p>  
                     <ul data-role="listview">
                     {{#pages}}

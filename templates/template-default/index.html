@@ -3,48 +3,52 @@
         <meta charset="UTF-8" />
         <title>{{name}}</title>
         {{{_includes_}}}
-        <link  rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
     </head>
     <body>
 
         <div data-role="page" class="general-view" id="home" data-theme="{{#theme}}{{base}}{{/theme}}">
 
             <div data-role="header" class="ui-header" data-theme="{{#theme}}{{base}}{{/theme}}">
-                <h1>{{header}}</h1>
+                <h1>{{name}}</h1>
+            </div>
+
+            <div class="center">
+                <p>pickingup</p>
+                <img src="{{topImage}}" />
+                <p>{{tagline}}</p>
+                <p></p>
             </div>
             
-            <div class="center">
-			    <p></p>
-                <img src="{{topImage}}"></img>
-			    <h4>{{tagline}}</h4>
-            </div>
-
             <div data-role="content" class="ui-content">
+            
                 <p>  
+                    <ul data-role="listview">
                     {{#pages}}
-                    <a href="#page-{{id}}" data-role="button">{{title}}</a>
+                    <li><a href="#page-{{id}}">{{title}}</a></li>
                     {{/pages}}
+                    </ul>
                 </p>
             </div>
-
+            
             <div data-role="footer" class="ui-footer ui-bar-a" role="contentinfo" data-theme="{{#theme}}{{base}}{{/theme}}" data-position="fixed">
-            	<h6 class="ui-title" role="heading" aria-level="1">{{footer}}</h6>
+            	<p class="ui-title" role="heading" aria-level="1">{{footer}}</p>
             </div>
-            			
         </div>
+        
 
         {{#pages}}
         <div data-role="page" id="page-{{id}}" data-theme="{{#theme}}{{base}}{{/theme}}">
-            <div data-role="header" data-theme="{{#theme}}{{base}}{{/theme}}">
+            <div data-role="header" class="ui-header" data-theme="{{#theme}}{{base}}{{/theme}}">
+                <a href="#home" data-role="button" data-mini="true" data-inline="true" data-icon="home" >Home</a>
                 <h1>{{title}}</h1>
-                <a href="#home" data-direction="reverse" data-icon="arrow-l" class="ui-btn-bck" >Home</a>
             </div> 
+            
             <div data-role="content" role="main" class="ui-content">
                     {{{_content_}}}
             </div>
         </div>
         {{/pages}}
-        
-        
+
     </body>
 </html>

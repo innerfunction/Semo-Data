@@ -10,19 +10,17 @@
 		<div data-role="page" class="general-view page" id="home" data-theme="{{#theme}}{{base}}{{/theme}}">
 		
 			<div data-role="header" class="ui-header header"data-position="fixed" data-theme="{{#theme}}{{base}}{{/theme}}">
-				<h1>{{name}}</h1>
+				<h1>{{header}}</h1>
 			</div>
-			
-			<p></p>
-			<p class="center"><img src="{{topImage}}" /></p>
-			<p></p>
-			<h4 class="center">{{tagline}}</h4>
-			<p></p>
+		    
+            <div class="center">
+			    <p></p>
+                <img src="{{topImage}}"></img>
+			    <h4>{{tagline}}</h4>
+            </div>
 			
 
 			<div class="ui-content" data-role="content">
-				<p><img class="center" src="{{topImage}}" /></p>
-				
 				{{#pages}}
 				<div id="#page-{{id}}">
 					<div data-role="collapsible">
