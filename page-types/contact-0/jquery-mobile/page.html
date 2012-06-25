@@ -1,20 +1,21 @@
-<!-- Contact page type -->
 <p>
 	<ul data-role="listview" data-inset="true" id="contact">
 		<li data-role="list-divider" role="heading" class="ui-bar-a">Get in Touch</li>
 		<li class="address">{{_page_.address}}</li>
-		<li class="phone">{{_page_.phone}}</li>
-		<li class="email">{{_page_.email}}</li>
-		<li class="web">{{_page_.website}}</li>
+		<li class="phone">{{_page_.phone}}<a href="tel:{{_page_.phone}}"></a></li>
+		<li class="email">{{_page_.email}}<a href="mailto:{{_page_.email}}?subject={{_page_.emailSubject}}&body={{_page_.defaultEmailText}}" ></a></li>
+		<!-- <li class="web">{{_page_.website}}</li> -->
 	</ul>
 </p>
 
 <p>
 	<ul data-role="listview" data-inset="true" id="socialmedia">
 		<li data-role="list-divider" role="heading" class="ui-bar-a">Follow us</li>
-		<li class="facebook">{{_page_.facebook}}</li>
-		<li class="twitter">{{_page_.twitter}}</li>
-		<li class="linkedin">{{_page_.linkedin}}</li>
+		<!-- <li class="facebook">{{_page_.facebook}}</li> -->
+		<li class="facebook"><a href="http://facebook.com/{{_page_.facebook}}">{{_page_.facebook}}</a></li>
+		<li class="twitter"><a href="https://twitter.com/{{_page_.twitter}}" class="twitter-follow-button" data-show-count="false">Follow @{{_page_.twitter}}</a></li>
+		<!-- <li class="linkedin">{{_page_.linkedin}}</li> -->
 	</ul>
 </p>
+
 
