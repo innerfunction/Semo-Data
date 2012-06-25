@@ -1,5 +1,5 @@
 // Set baseUrl to your Semo-Data path
-var baseUrl = '/Library/WebServer/Documents/github/Semo-Data';
+var baseUrl = '/Users/user/Documents/go-movil/WebMob/Semo-Data';
 exports.defaultFramework = 'jquery-mobile';
 
 exports.dirs = {
