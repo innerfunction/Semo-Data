@@ -4,6 +4,16 @@
         <title>{{name}}</title>
         {{{_includes_}}}
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <script type="text/javascript">
+            $(document).bind('pageinit',function(){
+                console.log('running');
+                var grid = ['ui-block-a', 'ui-block-b', 'ui-block-c'], i = 0;
+                $('div.ui-grid-b div').each(function(){
+                    $(this).addClass(grid[i]);
+                    i++; if (i==3) i=0;
+                });
+            });
+        </script>
     </head>
     <body>
 
@@ -24,19 +34,13 @@
 
             <div data-role="content" class="ui-content">
                 <!-- Menu -->
-                {{#pages}}
                 <div class="ui-grid-b">
-                	<div class="ui-block-a">
+                {{#pages}}
+                	<div class="ui-block">
                 		<a href="#page-{{id}}" data-role="button">{{title}}</a>
                 	</div>
-                	<div class="ui-block-b">
-                		<a href="#page-{{id}}" data-role="button">{{title}}</a>
-                	</div>	 
-                	<div class="ui-block-c">
-                		<a href="#page-{{id}}" data-role="button">{{title}}</a>
-                	</div>  
-                </div>
                 {{/pages}}
+                </div>
                 
               </div>    
                    	<div data-role="footer" data-theme="{{#theme}}{{base}}{{/theme}}" data-position="fixed">		
