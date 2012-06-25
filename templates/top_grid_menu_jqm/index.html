@@ -15,10 +15,11 @@
 		
 		<div data-role="page" class="general-view" id="home" data-theme="{{#theme}}{{base}}{{/theme}}">
 		
-			<div data-role="header" class="ui-header" data-theme="{{#theme}}{{base}}{{/theme}}" data-position="fixed">
-				<h1>{{name}}</h1>
-				<div data-role="navbar" data-theme="{{#theme}}{{base}}{{/theme}}">
-					<ul data-theme="{{#theme}}{{base}}{{/theme}}">
+			<div data-role="header" class="ui-header" data-position="fixed">
+				<h1>{{header}}</h1>
+
+				<div data-role="navbar">
+					<ul>
 						{{#pages}}
 						<li><a href="#page-{{id}}" data-theme="{{#theme}}{{base}}{{/theme}}">{{title}}</a></li>
 						{{/pages}}
@@ -27,15 +28,15 @@
 				</div>
 				
 			</div>
-			<p></p>
-			
-			<div class="logo">
-				<img src="{{topImage}}" />
-				
-			</div>
-			<p></p>
-			<h4>{{tagline}}</h4>
-			
+
+		    <div class="center">
+                <p></p>
+                <img src="{{topImage}}" />
+                <p></p>
+                <p>{{tagline}}</p>
+                <p></p>
+            </div>
+	
 			<div data-role="footer" data-theme="{{#theme}}{{base}}{{/theme}}" data-position="fixed">		
 				<h6>{{footer}}</h6>
 			</div>

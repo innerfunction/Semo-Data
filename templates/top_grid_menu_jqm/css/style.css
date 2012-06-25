@@ -1,4 +1,8 @@
 /* Test template CSS stylesheet */
+.center {
+	text-align: center;
+}
+
 .button-menu {
 	
 }

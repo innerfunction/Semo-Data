@@ -80,11 +80,11 @@ function initialize() {
 
 // Initialize the map when the jQuery Mobile pageshow event is triggered
 // id Selector depends on the name of the data-role="page". This is a problem, nut for now it's working
-$('#page-2').live("pageshow", function() {
+$('div').live("pageshow", function() {
         if (map == null) {
                 initialize();
         }
 });
-$('#page-2').live("pagehide", function() {
+$('div').live("pagehide", function() {
         map = null;
 });

@@ -16,17 +16,25 @@
 		<div data-role="page" class="general-view" id="home" data-theme="{{#theme}}{{base}}{{/theme}}">
 		
 			<div data-role="header" class="ui-header" data-theme="{{#theme}}{{base}}{{/theme}}">
-				<h1>{{name}}</h1>
+				<h1>{{header}}</h1>
 			</div>
-			
-			<div data-role="content">
+
+            <div class="center">
+			    <p></p>
+                <img src="{{topImage}}"></img>
+			    <h4>{{tagline}}</h4>
+            </div>
+
+            <!-- Natalia: review this
+            <div data-role="content">
 				<div class="logo">
 					<img src="{{topImage}}" />
 				</div>
 			</div>	
 			<div data-role="content">
-				<p>{{body}}</p>
-			</div>									
+                <p>{{tagline}}</p>
+            </div>
+            -->
 						
 			<div data-role="footer" data-theme="{{#theme}}{{base}}{{/theme}}" data-position="fixed">		
 				<div data-role="navbar" data-theme="{{#theme}}{{base}}{{/theme}}">
