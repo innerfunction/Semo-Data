@@ -1,4 +1,48 @@
- <div class="form-row">
+<style type="text/css">
+    html, body, #map_canvas {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    #mapURI {
+        width:400px;
+    }
+</style>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+    function initialize() {
+    var myOptions = {
+        zoom: 8,
+        center: new google.maps.LatLng(40.396764,-3.713379),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+
+    var map = new google.maps.Map(document.getElementById('map_canvas'), myOptions);
+
+    var marker;
+
+    function placeMarker(location) {
+        if ( marker ) {
+            marker.setPosition(location);
+        } else {
+            marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+            var coord = location.lat()+","+location.lng()
+            document.getElementById('mapURI').value = location.lat() + ', ' + location.lng()
+        }
+
+        google.maps.event.addListener(map, 'click', function(event) {
+                placeMarker(event.latLng);
+            });
+        }
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
+<div class="form-row">
     <label for="title" class="">Page title</label>
     <div class="input">
         <input type="text" name="title" class="nub-view website-data "/>
@@ -15,17 +59,9 @@
         <label for="mapURI" class="label-form control-label">Coordinates</label>
         <div class="controls">
             <div class="input">
-                <input type="text" name="mapURI" class="nub-view website-data ">				
+                <input type="text" id="mapURI" class="nub-view website-data ">				
             </div>
         </div>
     </div>
 </div>
-<div class="form-row">
-    <label for="mapView" class="">View map</label>
-    <div class="input">
-        <iframe name="mapView" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
-                src="https://maps.google.es/?ie=UTF8&amp;ll=40.396764,-3.713379&amp;spn=7.963519,14.150391&amp;t=m&amp;z=6&amp;output=embed">
-        </iframe>
-    </div>
-</div>
-
+<div id="map_canvas"></div>

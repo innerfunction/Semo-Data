@@ -14,35 +14,42 @@
 			
 			$(document).ready(function(){
 				
-				//$('div.gallery-page')
-				//You must put in below id selector the page id in test
-				//It's a problem, but for now it's working
-				$('#page-5')
-					.live('pageshow', function(e){
-						
-						var 
-							currentPage = $(e.target),
-							options = {},
-							photoSwipeInstance = $("ul.gallery a", e.target).photoSwipe(options,  currentPage.attr('id'));
-							
-						return true;
-						
-					})
+				$( 'div' ).live( 'pagehide',function(event, ui){
+					//console.log(ui.nextPage);
+					//console.log(ui.nextPage.find('.gallery'));
+					var galleryExists = ui.nextPage.find('.gallery');
 					
-					.live('pagehide', function(e){
-						
-						var 
-							currentPage = $(e.target),
-							photoSwipeInstance = PhotoSwipe.getInstance(currentPage.attr('id'));
+					//console.log(galleryExists.length);
+					//photoSwipeInstance = null;
 
+					if(galleryExists.length>0){
+						var
+							currentPage = ui.nextPage,
+							options = {},
+							photoSwipeInstance = $("ul.gallery a", currentPage).photoSwipe(options,  currentPage.attr('id'));
+							return true;
+					}
+				});
+
+				$( 'div' ).live( 'pageshow',function(event, ui){
+					//console.log(ui.prevPage);
+					//console.log(ui.prevPage.find('.gallery'));
+					var galleryExists = ui.prevPage.find('.gallery');
+					
+					//console.log(galleryExists.length);
+					
+
+					if(galleryExists.length>0){
+						var
+							currentPage =  ui.prevPage,
+							photoSwipeInstance = PhotoSwipe.getInstance(currentPage.attr('id'));
 						if (typeof photoSwipeInstance != "undefined" && photoSwipeInstance != null) {
 							PhotoSwipe.detatch(photoSwipeInstance);
 						}
-						
 						return true;
-						
-					});
-				
+					}
+				});
+
 			});
 		
 		}(window, window.jQuery, window.Code.PhotoSwipe));
