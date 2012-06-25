@@ -2,7 +2,6 @@
 var baseUrl = '/Library/WebServer/Documents/github/Semo-Data';
 exports.defaultFramework = 'jquery-mobile';
 
-
 exports.dirs = {
     frameworks: baseUrl+'/frameworks',
     themes:     baseUrl+'/themes',
