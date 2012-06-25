@@ -1,3 +1,10 @@
+<!--
+	@author: Go Móvil. www.go-movil.es 
+	@date: June, 2012
+	@name: Dropdown menu
+	@description: Theme for jQuery Mobile. A template with a dropdown menu for navigation.
+-->
+
 <html>
     <head>
         
@@ -20,15 +27,18 @@
 		
 		<div data-role="page" class="general-view" id="home" data-theme="{{#theme}}{{base}}{{/theme}}">
 			<div data-role="header" class="ui-header" data-theme="{{#theme}}{{base}}{{/theme}}">
-			    <h1>{{name}}</h1>
+			    <h1>{{header}}</h1>
 			</div>
 			<div data-role="content" class="center">
+				<!-- Logo / Main homepage image -->
 				<img class="center" src="{{topImage}}" /> 
 				<p></p>
+				<!-- Tagline -->
 				<h4 class="center">{{tagline}}</h4>
 			</div>
 								
 			<div data-role="content">
+				<!-- Menu -->
 				<select id='goto' data-native-menu="false">
 					<option data-placeholder="true">Menu</option> 
 					{{#pages}}
