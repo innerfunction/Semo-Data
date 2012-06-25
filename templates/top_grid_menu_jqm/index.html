@@ -1,7 +1,8 @@
 <!--
-	@author: Natalia 
-	@name: Button-navbar
-	@description: Theme for jQuery Mobile
+	@author: Go Móvil. www.go-movil.es 
+	@date: June, 2012
+	@name: Top Menu
+	@description: Theme for jQuery Mobile. A template with a grid menu at the top.
 -->
 
 <html>
@@ -17,7 +18,7 @@
 		
 			<div data-role="header" class="ui-header" data-position="fixed">
 				<h1>{{header}}</h1>
-
+				<!-- Menu -->
 				<div data-role="navbar">
 					<ul>
 						{{#pages}}
@@ -29,10 +30,12 @@
 				
 			</div>
 
-		    <div class="center">
+		    <div data-role="content" class="center">
+                <!-- Logo / Main homepage image -->
                 <p></p>
                 <img src="{{topImage}}" />
                 <p></p>
+                <!-- Tagline -->
                 <p>{{tagline}}</p>
                 <p></p>
             </div>
