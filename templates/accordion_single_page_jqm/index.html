@@ -1,3 +1,10 @@
+<!--
+	@author: Go Móvil. www.go-movil.es 
+	@date: June, 2012
+	@name: Accordion menu single page
+	@description: Theme for jQuery Mobile. A single page template where the pages are shown as an accordion menu.
+-->
+
 <html>
 	<head>
 	    <meta charset="UTF-8" />
@@ -15,12 +22,13 @@
 		    
             <div class="center">
 			    <p></p>
-                <img src="{{topImage}}"></img>
-			    <h4>{{tagline}}</h4>
+                <img src="{{topImage}}" />
             </div>
 			
 
 			<div class="ui-content" data-role="content">
+				<h4 class="center">{{tagline}}</h4>
+				<p></p>
 				{{#pages}}
 				<div id="#page-{{id}}">
 					<div data-role="collapsible">
