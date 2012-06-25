@@ -1,12 +1,20 @@
 <html>
     <head>
-        <script>
-
-        </script>
+        
 	    <meta charset="UTF-8" />
 	    <title>{{name}}</title>
 		{{{_includes_}}}
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script>
+        $(document).ready(function() {
+		  $("#goto").change(function(){
+		    if ($(this).val()!='') {
+		      window.location.href='#'+$(this).val();
+		      //console.log($(this).val());
+		    }
+		  });
+		});
+        </script>
 	</head>
 	<body>
 		
@@ -21,7 +29,7 @@
 			</div>
 								
 			<div data-role="content">
-				<select data-native-menu="false">
+				<select id='goto' data-native-menu="false">
 					<option data-placeholder="true">Menu</option> 
 					{{#pages}}
 						<option value="page-{{id}}">{{title}}</option>
