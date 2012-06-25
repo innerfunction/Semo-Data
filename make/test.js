@@ -23,20 +23,20 @@ var website = {
         username : 'username'
     },
     template: {
-        slug: 'default_jqm'
+        slug: 'buttons_two_column_grid_menu_jqm'
     },
     theme : {
         id : 'id',
-        slug : 'default',
+        slug : 'elevate',
         base : 'a'
     },
     pages: [
-        { id: 0, type: 'basic-0', title: 'Page zero', body: 'Soy el cuerpo', topImage: 'http://misteridea.com/wp-content/uploads/misteridea1.png' },
-        { id: 1, type: 'contact-0', title: 'Contact' },
-        { id: 2, type: 'map-0', title: 'Map', address: 'Circus Street',mapURI:'40.396764,-3.713379'},
-        { id: 3, type: 'contact-0', title: 'Contact' },
-        { id: 4, type: 'social-media-0', twitter: 'http://twitter.com/natcrea', facebook: 'http://twitter.com/natcrea' },
-        { id: 5, type: 'gallery-0'}
+        { id: 0, type: 'basic-0', title: '1', body: 'Soy el cuerpo', topImage: 'http://misteridea.com/wp-content/uploads/misteridea1.png' },
+        { id: 1, type: 'contact-0', title: '2' },
+       // { id: 2, type: 'map-0', title: 'Map', address: 'Circus Street',mapURI:'40.396764,-3.713379'},
+       // { id: 3, type: 'contact-0', title: 'Contact' },
+       // { id: 4, type: 'social-media-0', twitter: 'http://twitter.com/natcrea', facebook: 'http://twitter.com/natcrea' },
+        { id: 5, type: 'gallery-0', title: '3'}
     ]
 };
 
