@@ -1,3 +1,10 @@
+<!--
+	@author: Go Móvil. www.go-movil.es 
+	@date: June, 2012 
+	@name: Buttons Menu
+	@description: Theme for jQuery Mobile. A template with a button based menu.
+-->
+
 <html>
     <head>
         <meta charset="UTF-8" />
@@ -15,11 +22,14 @@
             
             <div class="center">
 			    <p></p>
-                <img src="{{topImage}}"></img>
-			    <h4>{{tagline}}</h4>
-            </div>
+                <img src="{{topImage}}" />
+			</div>
 
             <div data-role="content" class="ui-content">
+                <!-- Tagline doesn't close -->
+                <h4>{{tagline}}</h4>
+                
+                <!-- Menu--> 
                 <p>  
                     {{#pages}}
                     <a href="#page-{{id}}" data-role="button">{{title}}</a>
