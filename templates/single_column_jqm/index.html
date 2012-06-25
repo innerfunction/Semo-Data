@@ -1,3 +1,10 @@
+<!--
+	@author: Go Móvil. www.go-movil.es 
+	@date: June, 2012
+	@name: Single page
+	@description: Theme for jQuery Mobile. A single page template where all pages are shown in a single column.
+-->
+
 <html>
 	<head>
 	    <meta charset="UTF-8" />
@@ -14,12 +21,16 @@
 			</div>
 
             <div class="center">
+				<!-- Logo / Main homepage image -->
             	<p></p>
-            	<img src="{{topImage}}"/>
-            	<h3>{{tagline}}</h3>
+            	<img src="{{topImage}}" />
             </div>
 				
-			<div class="ui-content bottom-pages" data-role="content">
+			<div class="ui-content" data-role="content">
+				<!-- Tagline -->
+				<h3 class="center">{{tagline}}</h3>
+				<p></p>
+				<!-- Menu -->
 				{{#pages}}
 				<div id="#page-{{id}}">
 					<div data-role="content">
