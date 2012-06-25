@@ -78,13 +78,30 @@ function initialize() {
        });
 }
 
-// Initialize the map when the jQuery Mobile pageshow event is triggered
-// id Selector depends on the name of the data-role="page". This is a problem, nut for now it's working
-$('#page-2').live("pageshow", function() {
-        if (map == null) {
-                initialize();
+$( 'div' ).live( 'pagehide',function(event, ui){
+        //console.log(ui.nextPage);
+        //console.log(ui.nextPage.find('.map_canvas'));
+        var mapExists = ui.nextPage.find('.map_canvas');
+
+        //console.log(mapExists.length);
+
+        if(mapExists.length>0){
+                if (map === undefined) {
+                        initialize();
+                }
+        } else {
+                map = undefined;
+        
         }
 });
-$('#page-2').live("pagehide", function() {
-        map = null;
-});
+
+// // Initialize the map when the jQuery Mobile pageshow event is triggered
+// // id Selector depends on the name of the data-role="page". This is a problem, nut for now it's working
+// $('#page-2').live("pageshow", function() {
+//         if (map == null) {
+//                 initialize();
+//         }
+// });
+// $('#page-2').live("pagehide", function() {
+//         map = null;
+// });
