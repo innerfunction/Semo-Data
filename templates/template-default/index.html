@@ -1,3 +1,10 @@
+<!--
+	@author: Go Móvil. www.go-movil.es
+	@date: June, 2012  
+	@name: Default jqueryMobile
+	@description: Theme for jQuery Mobile. A template with jqueryMobile styles. The menu is a list.
+-->
+
 <html>
     <head>
         <meta charset="UTF-8" />
@@ -6,27 +13,27 @@
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
     </head>
     <body>
-
         <div data-role="page" class="general-view" id="home" data-theme="{{#theme}}{{base}}{{/theme}}">
 
-            <div data-role="header" class="ui-header" data-theme="{{#theme}}{{base}}{{/theme}}">
-                <h1>{{name}}</h1>
+            <div data-role="header" class="ui-header" >
+                <h1>{{header}}</h1>
             </div>
 
             <div class="center">
-                <p>pickingup</p>
-                <img src="{{topImage}}" />
-                <p>{{tagline}}</p>
-                <p></p>
+                <!-- Logo / Main homepage image -->
+                <img src="{{topImage}}"/>                
             </div>
             
-            <div data-role="content" class="ui-content">
-            
+            <div data-role="content" class="ui-content" style="text-align:center">
+                <!-- Tagline -->
+                <h4 class="center">{{tagline}}</h4>
+                <p></p>
+                <!-- Menu -->
                 <p>  
                     <ul data-role="listview">
-                    {{#pages}}
-                    <li><a href="#page-{{id}}">{{title}}</a></li>
-                    {{/pages}}
+	                    {{#pages}}
+		                    <li><a href="#page-{{id}}">{{title}}</a></li>
+	                    {{/pages}}
                     </ul>
                 </p>
             </div>
