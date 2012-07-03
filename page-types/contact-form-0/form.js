@@ -1,5 +1,5 @@
 exports.init = function( $form ) {
-    $.nub.setup( $form );
+    $.nub.init( $form );
 };
 exports.validate = function( page ) {
 };
