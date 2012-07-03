@@ -227,6 +227,8 @@ a.ui-link-inherit {
 	/*border-top: 1px solid 	#fff;
 	border-color: 			rgba(255,255,255,.3);*/
 	border: none;
+	text-align: left;
+	text-transform: lowercase;
 }
 
 
@@ -656,7 +658,7 @@ a.ui-link-inherit {
 	font-size: 16px; 
 	display: inline-block;
 }
-.ui-header .ui-title, .ui-footer .ui-title { 
+.ui-header .ui-title, .ui-title { 
 	min-height: 1.1em; 
 	text-align: left; 
 	font-size: 32pt; 
@@ -684,7 +686,12 @@ a.ui-link-inherit {
 
 /* Footer */
 .ui-footer{
-    height: 45px;
+    height: 50px;
+}
+
+.ui-footer .ui-title {
+	text-align: left;
+	text-transform: lowercase;
 }
 
 .ui-footer .ui-btn {
@@ -704,30 +711,13 @@ a.ui-link-inherit {
     border-color: white;
     background-color: #202020;
 }
-
-.ui-footer.ui-bar-b .ui-icon{
-    border-color: black;
-    background-color: #cccccc;
-}
-
 .ui-footer.ui-bar-a{
     background-color: #202020;
 }
-
 .ui-footer.ui-bar-a .ui-btn{
     background-color: #202020;
     color: white;
 }
-
-.ui-footer.ui-bar-b .ui-btn{
-    background-color: #cccccc;
-    color: black;
-}
-
-.ui-footer.ui-bar-b{
-    background-color: #cccccc;
-}
-
 .ui-footer .ui-btn .ui-btn-inner{
     height: 100%;
     border: none;
