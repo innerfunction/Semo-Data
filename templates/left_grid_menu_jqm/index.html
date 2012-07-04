@@ -1,0 +1,79 @@
+<!--
+	@author: Go Móvil. www.go-movil.es
+	@date: June, 2012  
+	@name: Default jqueryMobile
+	@description: Theme for jQuery Mobile. A template with jqueryMobile styles. The menu is a list.
+-->
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{{name}}</title>
+        {{{_includes_}}}
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    </head>
+    <body>
+        <div data-role="page" class="general-view" id="home" data-theme="{{#theme}}{{base}}{{/theme}}">
+
+            <div data-role="header" class="ui-header" data-position="fixed">
+                <h1>{{header}}</h1>
+            </div>
+
+            <div class="center">
+                <!-- Logo / Main homepage image -->
+                <img src="{{topImage}}"/>                
+            </div>
+             
+            <div id="navbar" data-role="navbar">
+            	<div class="navbar-bg ui-bar-a"></div>
+        		{{#pages}}
+	        		<a href="#page-{{id}}" class="text">{{title}}</a>
+        		{{/pages}}
+            </div><!-- /navbar -->
+            <!--
+            <div id="navbar">
+                <ul data-role="listview" class="ui-listview">
+                    {{#pages}}
+	                    <li class="ui-li ui-li-static ui-body-a ui-btn" data-icon="none" data-iconpos="top">
+	                    	<a href="#page-{{id}}" class="text">
+	                    		{{title}}
+	                    	</a>
+	                    </li>
+                    {{/pages}}
+                </ul>
+            </div>
+            -->
+            
+            <!-- Tagline -->
+            <h4 class="center">{{tagline}}</h4>
+            <p></p>
+            
+            <div data-role="footer" class="ui-footer ui-bar-a" role="contentinfo" data-theme="{{#theme}}{{base}}{{/theme}}" data-position="fixed">
+            	<p class="ui-title" role="heading" aria-level="1">{{footer}}</p>
+            </div>
+        </div>
+        
+
+        {{#pages}}
+        <div data-role="page" id="page-{{id}}" data-theme="{{#theme}}{{base}}{{/theme}}">
+            <div data-role="header" class="ui-header" data-theme="{{#theme}}{{base}}{{/theme}}" data-position="fixed">
+                <a href="#home" data-role="button" data-mini="true" data-inline="true" data-icon="home" >Home</a>
+                <h1>{{title}}</h1>
+            </div> 
+            
+		     <div id="navbar" data-role="navbar">
+		     	<div class="navbar-bg ui-bar-a"></div>
+		     	{{#pages}}
+		     		<a href="#page-{{id}}" class="text">{{title}}</a>
+		     	{{/pages}}
+		     </div><!-- /navbar -->
+		        
+            
+            <div data-role="content" role="main" class="ui-content">
+                    {{{_content_}}}
+            </div>
+        </div>
+        {{/pages}}
+
+    </body>
+</html>
