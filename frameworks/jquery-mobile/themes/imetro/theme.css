@@ -229,6 +229,7 @@ a.ui-link-inherit {
 	border: none;
 	text-align: left;
 	text-transform: lowercase;
+	border-top: 1px solid #333;
 }
 
 
@@ -686,7 +687,6 @@ a.ui-link-inherit {
 
 /* Footer */
 .ui-footer{
-    height: 50px;
 }
 
 .ui-footer .ui-title {
@@ -696,7 +696,6 @@ a.ui-link-inherit {
 
 .ui-footer .ui-btn {
     border: none;
-    height: 100%;
 }
 
 .ui-footer .ui-icon{
@@ -719,7 +718,6 @@ a.ui-link-inherit {
     color: white;
 }
 .ui-footer .ui-btn .ui-btn-inner{
-    height: 100%;
     border: none;
 }
 
