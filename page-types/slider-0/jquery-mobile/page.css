@@ -160,7 +160,7 @@
 .rslides_container {
 	margin-bottom: 50px;
 	position: relative;
-	float: left;
+	/*float: left;*/
 	width: 100%;
 }
 .centered-btns_nav {
