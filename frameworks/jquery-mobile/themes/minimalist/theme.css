@@ -12,11 +12,11 @@
 div > img {
 	text-align: center;
 }
+.center {
+	text-align: center;
+}
 h1, h2, h3, h4, h5, h6 {
 	font-family: serif;
-}
-img {
-	margin: -15px auto;
 }
 
 /* Swatches */
