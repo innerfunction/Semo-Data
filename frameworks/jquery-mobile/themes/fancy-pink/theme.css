@@ -610,7 +610,11 @@ a.ui-link-inherit {
 .gallery li a {	
 	border: 0px solid #3C3C3C !important;
 }
-
+.gallery li img {
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
+}
 .ui-header .ui-btn-up-a {
 	border: 1px solid #111111 /*{global-active-border}*/;
 	background: #383838 /*{global-active-background-color}*/;
