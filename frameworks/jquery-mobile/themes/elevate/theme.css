@@ -661,4 +661,8 @@ a.ui-link-inherit {
 	outline-width: 1px;
 	outline-style: dotted;
 }
-			
+.gallery li a {
+	border: 1px solid #ff424c !important;
+}
+
+		
