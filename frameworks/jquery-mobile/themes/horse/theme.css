@@ -65,7 +65,7 @@
 	background-image:     -ms-linear-gradient( #5c5a4e /*{a-body-background-start}*/, #5c5a4e /*{a-body-background-end}*/); /* IE10 */
 	background-image:      -o-linear-gradient( #5c5a4e /*{a-body-background-start}*/, #5c5a4e /*{a-body-background-end}*/); /* Opera 11.10+ */
 	background-image:         linear-gradient( #5c5a4e /*{a-body-background-start}*/, #5c5a4e /*{a-body-background-end}*/);
-	background: url(images/body.jpeg) repeat;
+	background: url(images/bg.jpeg) repeat;
 }
 .ui-overlay-a {
 	background-image: none;
@@ -608,20 +608,18 @@ a.ui-link-inherit {
 -------------------------------------------------------------------------------------------------*/	
 
 .ui-page .ui-header {
-	background: url(images/top-bar.jpeg) repeat-x top center;
-	border-top: 0px;
-	border-left: 0;
-	border-right: 0;
+	background: url(images/a-bar.jpeg) repeat-x left top;
+	border-top: 1px solid transparent;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
 	border-bottom: 1px dotted #E8D4AF;
-	position: relative;
-	width: 100%;
 }
 
 .ui-page .ui-footer {
-	background: url(images/top-bar.jpeg) repeat-x bottom center;
-	border-bottom: 0px;
-	border-left: 0;
-	border-right: 0;
+	background: url(images/a-bar.jpeg) repeat-x left bottom;
+	border-bottom: 1px solid transparent;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
 	border-top: 1px dotted #E8D4AF;
 }
 
