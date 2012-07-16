@@ -19,34 +19,25 @@
                 <h1>{{header}}</h1>
             </div>
 
-            <div class="center">
-                <!-- Logo / Main homepage image -->
-                <img src="{{topImage}}"/>                
-            </div>
-             
+                         
             <div id="navbar" data-role="navbar">
             	<div class="navbar-bg ui-bar-a"></div>
         		{{#pages}}
 	        		<a href="#page-{{id}}" class="text">{{title}}</a>
         		{{/pages}}
             </div><!-- /navbar -->
-            <!--
-            <div id="navbar">
-                <ul data-role="listview" class="ui-listview">
-                    {{#pages}}
-	                    <li class="ui-li ui-li-static ui-body-a ui-btn" data-icon="none" data-iconpos="top">
-	                    	<a href="#page-{{id}}" class="text">
-	                    		{{title}}
-	                    	</a>
-	                    </li>
-                    {{/pages}}
-                </ul>
-            </div>
-            -->
             
-            <!-- Tagline -->
-            <h4 class="center">{{tagline}}</h4>
-            <p></p>
+            <div data-role="content" role="main" class="ui-content">
+				<div class="center">
+				    <!-- Logo / Main homepage image -->
+				    <img src="{{topImage}}"/>                
+				</div>
+				
+				<!-- Tagline -->
+				<p></p>
+				<h4 class="center">{{tagline}}</h4>
+				<p></p>            
+			</div>     
             
             <div data-role="footer" class="ui-footer ui-bar-a" role="contentinfo" data-theme="{{#theme}}{{base}}{{/theme}}" data-position="fixed">
             	<p class="ui-title" role="heading" aria-level="1">{{footer}}</p>
