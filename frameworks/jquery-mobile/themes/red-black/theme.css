@@ -602,4 +602,22 @@ a.ui-link-inherit {
 	outline-width: 1px;
 	outline-style: auto;
 }
-			
+
+/* NEW STYLES
+-------------------------------------------------------------------------------------------------*/	
+
+.gallery li a {
+	margin: 7px !important;
+	-webkit-border-radius: 10em;
+    -moz-border-radius: 10em;
+	border-radius: 10em;
+	border: 1px solid #ccc !important;
+}
+
+.gallery img {
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	background: -webkit-gradient(radial, 50% 50%, 40, 50% 50%, 80, from(rgba(0,0,0,0)), to(rgba(0,0,0,1)));
+	background: -moz-radial-gradient(50% 50%, circle, rgba(0,0,0,0) 40px, rgba(0,0,0,1) 80px);
+}
