@@ -602,4 +602,21 @@ a.ui-link-inherit {
 	outline-width: 1px;
 	outline-style: auto;
 }
-			
+
+/* NEW STYLES
+-------------------------------------------------------------------------------------------------*/	
+
+.gallery li a {
+	background: rgba(107,187,33,1) !important;
+	margin: 7px !important;
+	padding: 5px !important;
+	border: 0px dotted #E8D4AF !important;
+	border-radius: 7px;
+}
+.gallery li a:hover {
+	background: background: #ff6622 !important;
+}
+.gallery img {
+	border-radius: 7px;
+}
+		
