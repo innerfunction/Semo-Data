@@ -51,7 +51,7 @@
 .ui-bar-a select,
 .ui-bar-a textarea,
 .ui-bar-a button {
-	 font-family: Helvetica, Arial, sans-serif /*{global-font-family}*/;
+	 font-family: Times New Roman, serif /*{global-font-family}*/;
 }
 .ui-body-a,
 .ui-overlay-a {
@@ -75,7 +75,7 @@
 .ui-body-a select,
 .ui-body-a textarea,
 .ui-body-a button {
-	 font-family: Helvetica, Arial, sans-serif /*{global-font-family}*/;
+	 font-family: Times New Roman, serif /*{global-font-family}*/;
 }
 
 .ui-body-a .ui-link-inherit {
@@ -151,7 +151,7 @@
 .ui-btn-up-a,
 .ui-btn-hover-a,
 .ui-btn-down-a {
-	 font-family: Helvetica, Arial, sans-serif /*{global-font-family}*/;
+	font-family: "Trebuchet MS" /*{global-font-family}*/;
 	text-decoration: none;
 }
 
@@ -633,6 +633,14 @@ a.ui-link-inherit {
 }
 /* Typography styles */
 
+
+/* acts as body of page */
+.ui-page, .ui-body-d, .ui-body-d input, .ui-body-d select, .ui-body-d textarea, .ui-body-d button {
+	font-family: "Times New Roman";
+}
+h1, h2, h3, h4 {
+	font-family: "Trebuchet MS";
+}
 h1 {
 	display: block;
 	font-size: 2em;
