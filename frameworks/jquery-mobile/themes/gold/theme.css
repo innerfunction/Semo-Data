@@ -602,4 +602,12 @@ a.ui-link-inherit {
 	outline-width: 1px;
 	outline-style: auto;
 }
+
+.gallery li a {
+	border: 1px solid #faef73 !important;
+	margin: 0px !important;
+	padding: 5px;
+}
+
+
 			
