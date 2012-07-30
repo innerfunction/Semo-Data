@@ -603,4 +603,10 @@ a.ui-link-inherit {
 	outline-width: 1px;
 	outline-style: auto;
 }
+
+/* Changes in the gallery page */ 
+.gallery li a {
+	margin: 0px !important;
+	border: 0px dotted #fff !important;
+}
 			
