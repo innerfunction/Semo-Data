@@ -604,4 +604,8 @@ a.ui-link-inherit {
 	outline-width: 1px;
 	outline-style: auto;
 }
-			
+		
+/* NEW STYLES
+-----------------------------------------------------------------------------------------------------------*/		
+.gallery li a { display: block; margin: 5px; border: 0px solid #2489CE !important; box-shadow: -1px -1px 7px  #2489CE;}
+	
