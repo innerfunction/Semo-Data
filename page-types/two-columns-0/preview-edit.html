@@ -3,23 +3,32 @@
 <form>
 	<fieldset class="nub-context" data="/remote/website/data/page/{{pageIdx}}">
 		
+        <label class="nub-view" data-name="title" data-editor="text">Title</label>
+
 		<!-- Body -->
-		<label for="body" class="">Content</label>
-		<textarea type="text" name="body" class="nub-view website-data "></textarea>
+        <!--<label for="body" class="">Content</label>-->
+        <!--<textarea type="text" name="body" class="nub-view website-data "></textarea>-->
+        <label class="nub-view" data-name="content" data-editor="text">Content</label>
 		
 		<!-- Column 1 -->
-		<label for="columnOneTitle" class="">C1 Title</label>
-		<input type="text" name="columnOneTitle" value="New page" class="nub-view website-data"/>
+		<!--<label for="columnOneTitle" class="">C1 Title</label>
+        <input type="text" name="columnOneTitle" value="New page" class="nub-view website-data"/>-->
+        <label class="nub-view" data-name="columnOneTitle" data-editor="text">Column 1 Title</label>
 		
-		<label for="columnOneBody" class="">C1 content</label>
-		<textarea type="text" name="columnOneBody" class="nub-view website-data "></textarea>
+    	<!--<label for="columnOneBody" class="">C1 content</label>
+        <textarea type="text" name="columnOneBody" class="nub-view website-data "></textarea>-->
+        <label class="nub-view" data-name="columnOneBody" data-editor="text">Column 1 Content</label>
+
 	    
 	    <!-- Column 2 -->
-	    <label for="columnTwoTitle" class="">C2 Title</label>
-        <input type="text" name="columnTwoTitle" value="New page" class="nub-view website-data"/>
-	    
-	    <label for="columnTwoBody" class="">C2 content</label>
-	    <textarea type="text" name="columnTwoBody" class="nub-view website-data "></textarea>
+	    <!-- <label for="columnTwoTitle" class="">C2 Title</label>
+        <input type="text" name="columnTwoTitle" value="New page" class="nub-view website-data"/>-->
+        <label class="nub-view" data-name="columnTwoTitle" data-editor="text">Column 2 Title</label>
+        
+	    <!--<label for="columnTwoBody" class="">C2 content</label>
+        <textarea type="text" name="columnTwoBody" class="nub-view website-data "></textarea>
+        -->
+        <label class="nub-view" data-name="columnTwoBody" data-editor="text">Column 2 Content</label>
 	    		  		  	
 	</fieldset>
 </form>

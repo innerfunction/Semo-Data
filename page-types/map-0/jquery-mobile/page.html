@@ -3,13 +3,15 @@
 <p>{{_page_.mapURI}}</p>
 <p>{{_page_.mapURI}}</p>
 <p><img scr="{{_page_.mapView}}"</p> -->
-<script type="text/javascript">
+<script type="text/javascript"></script>
+<p 
+    id="map_canvas" 
+    class="map_canvas" 
+    data-address="<p style=&quot;color:black;&quot;>{{_page_.address}}</p>" 
+    data-coordinates="{{_page_.mapURI}}">
+</p>
+<p>
+    {{_page_.address}}
+<p>
 
-</script>
 
-        <div 
-        	id="map_canvas" 
-        	class="map_canvas" 
-        	data-address="<p style=&quot;color:black;&quot;>{{_page_.address}}</p>" 
-        	data-coordinates="{{_page_.mapURI}}">
-        </div>

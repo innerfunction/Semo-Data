@@ -1,15 +1,25 @@
 <!-- @Page-type: basic-0 -->
 
-<form>
-	<fieldset class="nub-context" data="/remote/website/data/page/{{pageIdx}}">
-		
-		<!--Logotype-->
-	  	<label class="" for="topImage">Image</label>
-	  	<input name="topImage" class="nub-view website-data" type="file" data="topImage" placeholder="Select your main image…">	
-	  	
-		<!-- Body -->
-	  	<label for="body" class="">Content</label>
-	  	<textarea type="text" name="body" class="nub-view website-data " rows="7"></textarea>
+<form class="preview-edit">
+    <fieldset class="nub-context" data="/remote/website/data/page/{{pageIdx}}">
+
+        <!-- Title -->
+        <!--<label class="" for="title">Title</label>-->
+        <label class="nub-view" data-name="title" data-editor="text">Title</label>	
+
+		<!--Image-->
+        <!--<label class="" for="topImage">Image</label>-->
+        <label class="nub-view" data-name="image" data-editor="image">Image</label>	
+        
+        <!-- Body -->
+        <!--<label for="body" class="">Content</label>-->
+        <label class="nub-view" data-name="body" data-editor="richtext">Content</label>	
 	  	  	
 	</fieldset>
 </form>
+
+
+	  	<!--<input name="topImage" class="nub-view website-data" type="file" data="topImage" placeholder="Select your main image…">-->
+
+		<!-- Body -->
+        <!--<textarea type="text" name="body" class="nub-view website-data " rows="7"></textarea>-->
