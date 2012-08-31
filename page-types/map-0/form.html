@@ -10,7 +10,25 @@
 <script type="text/javascript">
     //Insert here you js code for stand-alone testing
 </script>
-<div class="form-row">
+
+<form>
+
+	<label for="title" class="">Page title</label>
+	<input type="text" name="title" class="nub-view website-data meta-data-fields">
+
+	<label for="address" class="label-form control-label">Address</label>
+	<textarea name="address" class="nub-view website-data meta-data-fields"></textarea>					
+	
+	<div class="clearfix">
+	<label for="mapURI" class="label-form control-label">Coordinates</label>
+	<input type="text" id="mapURI" class="nub-view website-data meta-data-fields">				
+	
+	<div id="map_canvas">MAP CANVAS</div>
+	
+</form>
+
+
+<!--<div class="form-row">
     <label for="title" class="">Page title</label>
     <div class="input">
         <input type="text" name="title" class="nub-view website-data "/>
@@ -32,4 +50,4 @@
         </div>
     </div>
 </div>
-<div id="map_canvas">MAP CANVAS</div>
+<div id="map_canvas">MAP CANVAS</div>-->
