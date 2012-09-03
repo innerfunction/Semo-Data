@@ -1,12 +1,31 @@
 <!-- @Page-type: youtube-0 -->
 
-<form>
+<form class="preview-edit">
 	<fieldset class="nub-context" data="/remote/website/data/page/{{pageIdx}}">
 		
+	  	<!-- Title -->
+        <!--<label class="" for="title">Title</label>-->
+        <label class="nub-view title" data-name="title" data-editor="text">Edit page title</label>	
+	  	
 	  	<!--Video URL-->
         <!--<label class="" for="videoURI">Video URL</label>-->
-        <label class="nub-view" data-name="videoURI" data-editor="text">Youtube video url</div>
+        <label class="nub-view video" data-name="videoURI" data-editor="text">
+        	<p><i class="icon-film"></i></p>
+        	<p> Add the Youtube video url</p>
+        </label>
         <!--<input type="text" name="videoURI" class="nub-view website-data" />-->
+         
+        <!-- Body -->
+        <!--<label for="body" class="">Content</label>-->
+        <label class="nub-view body" data-name="body" data-editor="richtext">
+        	<p>Add content</p>
+        	<h1><i class="icon-reorder"></i></h1>
+        </label>
+        
+        <div class="form-actions preview-actions">
+          <button type="submit" class="btn btn-primary">Save changes</button>
+        </div>	
+        
 	
 	</fieldset>
 </form>
