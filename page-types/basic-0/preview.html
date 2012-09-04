@@ -1,31 +1,33 @@
 <!-- @Page-type: basic-0 -->
 
-<form class="preview-edit">
-    <fieldset class="nub-context" data="/remote/website/data/pages/{{pageId}}">
-
+<form class="nub-context preview-edit" data="/remote/website/data/pages/0">
         <!-- Title -->
         <!--<label class="" for="title">Title</label>-->
-        <label class="nub-view title" data="title" data-editor="text">Edit page title</label>	
-
+        <div class="area area-title">
+	        <label class="nub-view title" data="title" data-editor="text"><h2>Edit page title</h2></label>
+	    </div>	
 		<!--Image-->
         <!--<label class="" for="topImage">Image</label>-->
-        <label class="nub-view image" data="image" data-editor="image">
-        	<p><i class="icon-picture"></i></p>
-        	<p>Click on me to add an image</p>
-        </label>	
+        <div class="area area-image">
+	        <label class="nub-view image" data="image" data-editor="image">
+	        	<p><i class="icon-picture"></i></p>
+	        	<p>Click on me to add an image</p>
+	        </label>
+        </div>	
         
         <!-- Body -->
         <!--<label for="body" class="">Content</label>-->
-        <label class="nub-view body" data="body" data-editor="richtext">
-        	<p>Add content</p>
-        	<h1><i class="icon-reorder"></i></h1>
-        </label>
-        
+        <div class="area area-body">
+	        <label class="nub-view body" data="body" data-editor="richtext">
+	        	<p>Add content</p>
+	        	<h1><i class="icon-reorder"></i></h1>
+	        </label>
+        </div>
         <div class="form-actions preview-actions">
           <button type="submit" class="btn btn-primary">Save changes</button>
         </div>	
 	  	  	
-	</fieldset>
+<!--	</fieldset>-->
 </form>
 
 
