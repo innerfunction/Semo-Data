@@ -1,12 +1,13 @@
 <!-- @Page-type: youtube-0 -->
 
-<form class="preview-edit">
-	<fieldset class="nub-context" data="/remote/website/data/page/{{pageIdx}}">
+<form class="preview-edit nub-context" data="/remote/website/data/page/{{pageIdx}}">
+<!--	<fieldset class="nub-context" data="/remote/website/data/page/{{pageIdx}}">-->
 		
 	  	<!-- Title -->
         <!--<label class="" for="title">Title</label>-->
-        <label class="nub-view title" data="title" data-editor="text">Edit page title</label>	
-	  	
+        <div class="area area-title">
+	        <label class="nub-view title" data="title" data-editor="text">Edit page title</label>	
+	  	</div>
 	  	<!--Video URL-->
         <!--<label class="" for="videoURI">Video URL</label>-->
         <label class="nub-view video" data="videoURI" data-editor="text">
@@ -27,5 +28,6 @@
         </div>	
         
 	
-	</fieldset>
+<!--	</fieldset>-->
 </form>
+
