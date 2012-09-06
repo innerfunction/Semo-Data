@@ -1,13 +1,13 @@
 <!-- @Page-type: basic-0 -->
 
-<form class="nub-context preview-edit" data="/remote/website/data/pages/0">
+<form class="nub-context preview-edit" data="/remote/website/data/pages/{{pageIdx}}">
+
         <!-- Title -->
-        <!--<label class="" for="title">Title</label>-->
         <div class="area area-title">
 	        <label class="nub-view title" data="title" data-editor="text"><h2>Edit page title</h2></label>
 	    </div>	
+
 		<!--Image-->
-        <!--<label class="" for="topImage">Image</label>-->
         <div class="area area-image">
 	        <label class="nub-view image" data="image" data-editor="image">
 	        	<p><i class="icon-picture"></i></p>
@@ -16,7 +16,6 @@
         </div>	
         
         <!-- Body -->
-        <!--<label for="body" class="">Content</label>-->
         <div class="area area-body">
 	        <label class="nub-view body" data="body" data-editor="richtext">
 	        	<p>Add content</p>
@@ -27,11 +26,4 @@
           <button type="submit" class="btn btn-primary">Save changes</button>
         </div>	
 	  	  	
-<!--	</fieldset>-->
 </form>
-
-
-	  	<!--<input name="topImage" class="nub-view website-data" type="file" data="topImage" placeholder="Select your main image…">-->
-
-		<!-- Body -->
-        <!--<textarea type="text" name="body" class="nub-view website-data " rows="7"></textarea>-->
