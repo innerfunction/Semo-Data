@@ -1,33 +1,30 @@
 <!-- @Page-type: youtube-0 -->
 
 <form class="preview-edit nub-context" data="/remote/website/data/page/{{pageIdx}}">
-<!--	<fieldset class="nub-context" data="/remote/website/data/page/{{pageIdx}}">-->
-		
-	  	<!-- Title -->
-        <!--<label class="" for="title">Title</label>-->
-        <div class="area area-title">
-	        <label class="nub-view title" data="title" data-editor="text">Edit page title</label>	
-	  	</div>
-	  	<!--Video URL-->
-        <!--<label class="" for="videoURI">Video URL</label>-->
-        <label class="nub-view video" data="videoURI" data-editor="text">
-        	<p><i class="icon-film"></i></p>
-        	<p> Add the Youtube video url</p>
-        </label>
-        <!--<input type="text" name="videoURI" class="nub-view website-data" />-->
-         
-        <!-- Body -->
-        <!--<label for="body" class="">Content</label>-->
-        <label class="nub-view body" data="body" data-editor="richtext">
-        	<p>Add content</p>
-        	<h1><i class="icon-reorder"></i></h1>
-        </label>
-        
-        <div class="form-actions preview-actions">
-          <button type="submit" class="btn btn-primary">Save changes</button>
-        </div>	
-        
+
+	<!-- Title -->
+	<div class="area area-title">
+		<label class="nub-view title" data="title" data-editor="text">Edit page title</label>	
+	</div>
+	<!--Video URL-->
+	<div class="area area-video">
+		<label class="nub-view" data="videoURI" data-editor="text">
+		<p><i class="icon-film"></i></p>
+		<p> Add the Youtube video url</p>
+		</label>
+	</div>
 	
-<!--	</fieldset>-->
+	<!-- Body -->
+	<div class="area area-body">
+		<label class="nub-view body" data="body" data-editor="richtext">
+		<p>Add content</p>
+		<h1><i class="icon-reorder"></i></h1>
+		</label>
+	</div>
+	
+	<div class="form-actions preview-actions">
+	<button type="submit" class="btn btn-primary">Save changes</button>
+	</div>	
+
 </form>
 
