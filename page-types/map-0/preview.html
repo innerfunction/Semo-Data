@@ -1,14 +1,23 @@
 <!-- @Page-type: map-0 -->
 
 <form class="preview-edit nub-context" data="/remote/website/data/page/{{pageIdx}}">
-<!--	<fieldset class="nub-context" data="/remote/website/data/page/{{pageIdx}}">-->
+		
+		 <!-- Title -->
+        <div class="area area-title">
+	        <label class="nub-view title" data="title" data-editor="text"><h2>Edit page title</h2></label>
+	    </div>	
+
 		
 		<!-- Address -->
-		<label for="address" class="">Address</label>
-		<input type="text" name="address" class="nub-view website-data "/>
+		<div class="area area-row form-label left span3">
+			<span class=""> Adress:  <label for="address" class="nub-view body" data="adress" data-editor="text">Address</label></span>
+<!--		<input type="text" name="address" class="nub-view website-data "/>-->
+		</div>
+		
 		<!-- Coordinates -->
-		<label for="mapURI" class="">Coordinates</label>
-		<input type="text" name="mapURI" class="nub-view website-data "/>
-	  		  		  	
-<!--	</fieldset>-->
+		<div class="area area-row form-label left span3">
+			<span class=""> Coordinates:  <label for="mapURI" class="nub-view body" data="mapURI" data-editor="text">Coordinates</label></span>
+<!--		<input type="text" name="mapURI" class="nub-view website-data "/>-->
+	  	</div>	
+	  	  		  	
 </form>
