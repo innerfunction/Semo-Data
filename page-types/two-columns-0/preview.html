@@ -1,51 +1,48 @@
 <!-- @Page-type: two-columns-0 -->
 
 <form class="preview-edit nub-context" data="/remote/website/data/page/{{pageIdx}}">
-<!--	<fieldset class="nub-context" data="/remote/website/data/page/{{pageIdx}}">-->
-		
-        <!-- Title -->
-        <!--<label class="" for="title">Title</label>-->
-        <label class="nub-view title" data="title" data-editor="text">Edit page title</label>	
-        
-        <!-- Body -->
-        <!--<label for="body" class="">Content</label>-->
-        <label class="nub-view body" data="body" data-editor="richtext">
-        	<p>Add content</p>
-        	<h1><i class="icon-reorder"></i></h1>
-        </label>
-        		
-		<!-- Column 1 -->
-		<!--<label for="columnOneTitle" class="">C1 Title</label>
-        <input type="text" name="columnOneTitle" value="New page" class="nub-view website-data"/>-->
-        <label class="nub-view column" data="columnOneTitle" data-editor="text"><h3>Column 1 Title</h3></label>
-        
-        <!-- Column 2 -->
-        <!-- <label for="columnTwoTitle" class="">C2 Title</label>
-        <input type="text" name="columnTwoTitle" value="New page" class="nub-view website-data"/>-->
-        <label class="nub-view column" data="columnTwoTitle" data-editor="text"><h3>Column 2 Title</h3></label>
-        
-		<!-- Column 1 -->
-    	<!--<label for="columnOneBody" class="">C1 content</label>
-        <textarea type="text" name="columnOneBody" class="nub-view website-data "></textarea>-->
-        <label class="nub-view column" data="columnOneBody" data-editor="text">
-        	Column 1 Content
-        	<h3><i class="icon-reorder"></i></h3>
-        </label>
-
-	    
-	     <!-- Column 2 -->
-	    <!--<label for="columnTwoBody" class="">C2 content</label>
-        <textarea type="text" name="columnTwoBody" class="nub-view website-data "></textarea>
-        -->
-        <label class="nub-view column" data="columnTwoBody" data-editor="text">
-        	Column 2 Content
-        	<h3><i class="icon-reorder"></i></h3>
-        </label>
-        	    		  		  	
-<!--	</fieldset>-->
 	
-	<div class="form-actions preview-actions">
-	  <button type="submit" class="btn btn-primary">Save changes</button>
-	</div>	
+	<!-- Title -->
+	<div class="area area-title">
+		<label class="nub-view title" data="title" data-editor="text">Edit page title</label>	
+	</div>
+	
+	<!-- Body -->
+	<div class="area area-body">
+		<label class="nub-view body" data="body" data-editor="richtext">
+			<p>Add content</p>
+			<h1><i class="icon-reorder"></i></h1>
+		</label>
+	</div>
+	
+	<!-- Column 1 -->
+	<div class="area column">
+		<label class="nub-view" data="columnOneTitle" data-editor="text"><h3>Column 1 Title</h3></label>
+	</div>
+	<!-- Column 2 -->
+	<div class="area column">
+		<label class="nub-view" data="columnTwoTitle" data-editor="text"><h3>Column 2 Title</h3></label>
+	</div>
+	
+	<!-- Column 1 -->
+	<div class="column">
+		<label class="nub-view" data="columnOneBody" data-editor="richtext">
+			Column 1 Content
+			<h3><i class="icon-reorder"></i></h3>
+		</label>
+	</div>
+	
+	<!-- Column 2 -->
+	<div class="column">
+		<label class="nub-view" data="columnTwoBody" data-editor="richtext">
+			Column 2 Content
+			<h3><i class="icon-reorder"></i></h3>
+		</label>
+	</div> 		  	
+	
+	
 </form>
+<div class="form-actions preview-actions" style="inline">
+	<button type="submit" class="btn btn-primary">Save changes</button>
+</div>	
 
