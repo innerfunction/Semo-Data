@@ -2,24 +2,33 @@
 
 <form class="preview-edit nub-context" data="/remote/website/data/page/{{pageIdx}}">
 
-<!--	<fieldset class="nub-context" data="/remote/website/data/page/{{pageIdx}}">-->
+	 <!-- Title -->
+	<div class="area area-title">
+	    <label class="nub-view title" data="title" data-editor="text"><h2>Edit page title</h2></label>
+	</div>	
 		
-		<!--Phone number-->
-			<label class="" for="phone">Phone number</label>
-			<input name="phone" class="nub-view website-data" type="file" data="phone" placeholder="+00 123456789" />
-			
-		<!--Email address-->
-		<label class="" for="phone">Email</label>
-		<input name="email" class="nub-view website-data" type="file" data="email" placeholder="example@mail.com" />	
-			
-		<!--Address-->
-		<label class="" for="address">Address</label>
-		<input name="address" class="nub-view website-data" type="file" data="address" placeholder="Main Street, NY" />	
+	<!--Phone number-->
+	<div class="area area-row form-label left">
+		<span class="span-label"><i class=" icon-phone-sign"></i> Phone: </span><label class="nub-view body" data="phone" data-editor="text"><i class="icon-phone-sign"></i> Add your Phone or mobile</label>
+	</div>
+	
+	<!--Email address-->
+	<div class="area area-row form-label left">
+		<span class="span-label"><i class="icon-envelope"></i> Email: </span><label class="nub-view body" data="email" data-editor="text"><i class="icon-envelope-alt"></i> Write your Email</label>
+	</div>
+	
+	<!--Address-->
+	<div class="area area-row form-label left">
+		<span class="span-label"><i class="icon-map-marker"></i> Address: </span><label class="nub-view body" data="address" data-editor="text"><i class="icon-map-marker"></i> Add your address</label>	
+	</div
+	
+	<!--Twitter-->
+	<div class="area area-row form-label left">
+		<span class="span-label"><i class="icon-twitter-sign twitter-color"></i> Twitter: </span><label class="nub-view body" data="twitter" data-editor="text"><i class="icon-twitter-sign"></i> @username</label>
+	</div>	
+		
+	<div class="form-actions preview-actions">
+	  <button type="submit" class="btn btn-primary">Save changes</button>
+	</div>	
 		  	
-	  	<!--Twitter-->
-	  	<label class="" for="twitter">Twitter</label>
-	  	<input name="twitter" class="nub-view website-data" type="file" data="twitter" placeholder="user-name" />
-	  	
-
-<!--	</fieldset>-->
 </form>
