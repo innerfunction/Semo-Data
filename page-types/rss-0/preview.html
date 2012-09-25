@@ -1,11 +1,25 @@
 <!-- @Page-type: rss-0 -->
 
 <form class="preview-edit nub-context" data="/remote/website/data/page/{{pageIdx}}">
-<!--	<fieldset class="nub-context" data="/remote/website/data/page/{{pageIdx}}">-->
+
+	<!-- Title -->
+	<div class="area area-title">
+		<label class="nub-view title" data="title" data-editor="text">Edit page title</label>
+	</div>
+	
+	<!--Address-->
+	<div class="area area-row form-label left">
+		<span class="span-label"><i class="icon-rss"></i> RSS url: </span><label class="nub-view body" data="rssURI" data-editor="text"><i class="icon-rss"></i> Add your rss url</label>	
+	</div>
+	
 		
-		<!--RSS URI-->
-	  	<label class="" for="rssURI">RSS url</label>
-	  	<input name="rssURI" class="nub-view website-data" type="text" data="rssURI" placeholder="http://rss.webmob.es">	
-	  	  	  	
-<!--	</fieldset>-->
+	<!--
+  	<label class="" for="rssURI">RSS url</label>
+  	<input name="rssURI" class="nub-view website-data" type="text" data="rssURI" placeholder="http://rss.webmob.es">	
+  	-->
+	  	 
+	<div class="form-actions preview-actions">
+		<button type="submit" class="btn btn-primary">Save changes</button>
+	</div>	
+	 	  	
 </form>
