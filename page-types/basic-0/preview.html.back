@@ -1,0 +1,30 @@
+<!-- @Page-type: basic-0 -->
+
+<div class="nub-context preview-edit" data="/remote/website/data/pages/{{pageIdx}}">
+
+        <!-- Title -->
+        <div class="area area-title">
+	        <label class="nub-view title" data="title" data-editor="text"><h2>Edit page title</h2></label>
+	    </div>	
+
+		<!--Image-->
+        <div class="area">
+	        <label class="nub-view image" data="image" data-editor="image">
+                <!--<p><i class="icon-picture"></i></p>-->
+	        	<p>Click on me to add an image</p>
+	        </label>
+        </div>	
+        
+        <!-- Body -->
+        <div class="area area-body">
+	        <label class="nub-view body" data="body" data-editor="richtext">
+	        	<p>Add content</p>
+	        	<h1><i class="icon-reorder"></i></h1>
+	        </label>
+        </div>
+        
+        <div class="form-actions preview-actions">
+          <button type="submit" class="btn btn-primary">Save changes</button>
+        </div>	
+	  	  	
+</div>
